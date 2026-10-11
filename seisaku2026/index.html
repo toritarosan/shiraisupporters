@@ -221,5 +221,47 @@ h1.hero-label{font-family:var(--font-en);font-size:clamp(60px,13vw,148px);font-w
  });
 })();
 </script>
+
+<!-- SITEBACK-START トップへ戻る小さなリンク(スクロール連動)。差し込み= shirai-web/tools/apply_backlink.py -->
+<style>
+.site-back{position:fixed;left:16px;bottom:16px;z-index:60;display:inline-flex;align-items:center;gap:8px;
+  min-height:44px;padding:0 16px 0 13px;border-radius:999px;
+  background:rgba(255,255,255,.92);border:1px solid var(--line,#e7e2d6);
+  box-shadow:0 4px 14px rgba(20,40,70,.10);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+  font-family:var(--font-jp,'Noto Sans JP',system-ui,sans-serif);font-size:13px;font-weight:700;
+  line-height:1;letter-spacing:.02em;color:var(--ink-soft,#5d5650);text-decoration:none;
+  opacity:0;visibility:hidden;transform:translateY(6px);
+  transition:opacity .28s ease,transform .28s ease,visibility .28s,color .15s,border-color .15s}
+.site-back.is-on{opacity:1;visibility:visible;transform:none}
+.site-back:hover,.site-back:focus-visible{color:var(--blue-ink,#005a91);border-color:var(--blue-pale,#d3edfb);
+  background:#fff;box-shadow:0 6px 18px rgba(20,40,70,.14)}
+.site-back .sb-arrow{font-size:15px;line-height:1}
+@media (max-width:600px){.site-back{left:12px;bottom:12px;font-size:12px;padding:0 14px 0 11px}}
+@media (prefers-reduced-motion:reduce){.site-back{transition:none}}
+@media print{.site-back{display:none!important}}
+</style>
+<a class="site-back" href="https://shiraisupporters.tokyo/" aria-label="白井とおるサポーターズのトップページへ戻る"><span class="sb-arrow" aria-hidden="true">←</span>白井とおるサポーターズ</a>
+<script>
+(function(){
+  var el = document.querySelector('.site-back');
+  if (!el) return;
+  function update(){
+    var doc = document.documentElement;
+    var bottomGap = doc.scrollHeight - (window.scrollY + window.innerHeight);
+    // 1画面ぶん下へ進んだら出す。本文の終わりが近いときは引っ込める
+    el.classList.toggle('is-on', window.scrollY > window.innerHeight * 0.6 && bottomGap > 120);
+  }
+  var waiting = false;
+  function onScroll(){
+    if (waiting) return;
+    waiting = true;
+    requestAnimationFrame(function(){ update(); waiting = false; });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll, {passive:true});
+  update();
+})();
+</script>
+<!-- SITEBACK-END -->
 </body>
 </html>
