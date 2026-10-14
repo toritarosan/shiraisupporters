@@ -64,3 +64,8 @@
   .hero-visual{order:4;margin-top:32px}
   .hero-cta{order:5}
 }
+
+/* Desktop: align the card covers with the blue nameplate. */
+@media (min-width:1001px){
+  .hero-cta{transform:translateY(var(--card-align-offset,0px))}
+}

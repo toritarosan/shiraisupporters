@@ -877,6 +877,31 @@ rd.addEventListener('click',ev=>{if(ev.target===rd||ev.target.id==='rd-stage')cl
 document.addEventListener('keydown',ev=>{if(!rd.classList.contains('open'))return;if(ev.key==='Escape')closeReader();if(ev.key==='ArrowRight'&&cur<EPS.length-1)show(cur+1);if(ev.key==='ArrowLeft'&&cur>0)show(cur-1)});
 </script>
 
+<!-- CARD-ALIGNMENT-START -->
+<script>
+// Move only the card group; keep the stacked mobile layout unchanged.
+(() => {
+  const cards = document.querySelector('.hero-cta');
+  const plate = document.querySelector('.hero-nameplate');
+  const hero = document.querySelector('.hero-inner');
+  if (!cards || !plate || !hero) return;
+  const align = () => {
+    cards.style.setProperty('--card-align-offset', '0px');
+    if (window.innerWidth <= 1000) return;
+    const bottom = Math.max(...Array.from(cards.querySelectorAll('.cover'), card => card.getBoundingClientRect().bottom));
+    cards.style.setProperty('--card-align-offset', (plate.getBoundingClientRect().bottom - bottom + 8) + 'px');
+  };
+  new ResizeObserver(align).observe(hero);
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(align, 350); // Wait for existing cover transitions.
+  });
+  window.addEventListener('load', align);
+  document.fonts.ready.then(align);
+})();
+</script>
+<!-- CARD-ALIGNMENT-END -->
 </body>
 <template id="__bundler_thumbnail">
   <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
