@@ -127,6 +127,24 @@
 <span class="chA-go" aria-hidden="true">→</span>
 </div></a>
 <!-- CHOSHA-LINK-END -->
+<!-- KIFU-LINK-START 寄付ページへの帯 2026-10-17 -->
+<style>
+.kfA{display:block;background:var(--magenta-pale);color:var(--ink);text-decoration:none;border-bottom:1px solid rgba(0,0,0,.06)}
+.kfA .wrap{display:flex;align-items:center;gap:12px 16px;min-height:56px;padding-top:10px;padding-bottom:10px}
+.kfA-tag{flex:none;font-family:var(--font-round);font-weight:900;font-size:.8rem;letter-spacing:.08em;background:var(--magenta);color:#fff;padding:3px 12px;border-radius:999px}
+.kfA-txt{flex:1 1 auto;min-width:0;line-height:1.5}
+.kfA-txt b{font-family:var(--font-round);font-weight:900;font-size:clamp(1rem,2vw,1.15rem)}
+.kfA-txt small{display:block;font-size:.82rem;color:var(--ink-soft)}
+.kfA-go{flex:none;width:36px;height:36px;border-radius:50%;background:var(--magenta-deep);color:#fff;display:grid;place-items:center;font-weight:900;transition:transform .2s}
+.kfA:hover .kfA-go{transform:translateX(4px)}
+.kfA:focus-visible{outline:3px solid var(--magenta-deep);outline-offset:-3px}
+</style>
+<a class="kfA" href="/kifu/"><div class="wrap">
+<span class="kfA-tag">寄付</span>
+<span class="kfA-txt"><b>ご寄付のお願い</b><small>白井とおるサポーターズへのご寄付の方法と、法律で定められていること</small></span>
+<span class="kfA-go" aria-hidden="true">→</span>
+</div></a>
+<!-- KIFU-LINK-END -->
 <!-- ============ INTRO BAND ============ -->
   <div class="intro-band">
     <div class="wrap intro-inner reveal">
@@ -559,6 +577,7 @@
           <p>白井とおるサポーターズは、白井とおるの活動を応援する会員組織です（年会費1,000円）。ボランティア、SNSでのシェア、ポスター掲示など、できることから。一緒に</p>
           <div class="support-actions">
             <a href="https://forms.gle/bF9sboPknsSvbjzA6" class="btn btn-w" target="_blank" rel="noopener">サポーターズ登録 <span class="arrow">→</span></a>
+            <a href="/kifu/" class="btn btn-yellow">ご寄付のお願い <span class="arrow">→</span></a><!-- KIFU-SUPPORT-BTN 2026-10-17 -->
             <!-- 公式LINEボタンは校正指示で撤去。復活用: <a href="https://line.me/R/ti/p/%40969gipwd" class="btn btn-yellow" target="_blank" rel="noopener">白井とおる公式LINE <span class="arrow">→</span></a> -->
             <button type="button" class="terms-link" id="terms-open">サポーターズ規約を読む</button>
           </div>
