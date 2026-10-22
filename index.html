@@ -445,6 +445,75 @@
     </div>
   </section>
 
+<!-- YTC-START zip外の手動追加。戻し方は YouTube導線_2026-10-20/README.md -->
+<style>
+/* 案C SNSハブ（YouTube導線_2026-10-20） */
+.snshub{background:var(--paper)}
+.sns-grid{display:grid;grid-template-columns:2fr 1fr;gap:20px}
+.sns-side{display:grid;gap:20px}
+.sns-card{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px 28px;box-shadow:var(--shadow-sm);
+  color:var(--ink);transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.sns-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.sns-yt{background:linear-gradient(135deg,#fff 0,#fff 55%,#fff0f0 100%);border-color:#ffd6d6;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}
+.sns-main{display:block;color:inherit}
+.sns-main:hover .sns-cta{text-decoration:underline;text-underline-offset:3px}
+.sns-head{display:flex;align-items:center;gap:12px}
+.sns-ico{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto}
+.sns-ico svg{width:22px;height:22px;fill:#fff}
+.sns-yt .sns-ico{background:#f00} .sns-x .sns-ico{background:#000} .sns-ig .sns-ico{background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7)}
+.sns-ava{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:var(--shadow-sm);margin-left:-18px}
+.sns-svc{font:800 .76rem/1 var(--font-en);letter-spacing:.06em;color:var(--ink-faint);text-transform:uppercase}
+.sns-name{font:800 1.12rem/1.3 var(--font-round);margin-top:3px}
+.sns-yt .sns-name{font-size:1.3rem}
+.sns-desc{font-size:.95rem;color:var(--ink-soft);margin-top:12px;line-height:1.7}
+.sns-cta{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font:700 .92rem/1 var(--font-round);color:#c00}
+.sns-cta svg{width:18px;height:18px;fill:currentColor;flex:0 0 auto}
+.sns-x .sns-cta,.sns-ig .sns-cta{color:var(--accent-deep);margin-top:10px}
+.sh-row{display:flex;gap:10px}
+.sh-item{position:relative;width:88px;aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:#000;box-shadow:var(--shadow-md);flex:0 0 auto}
+.sh-item:nth-child(2){transform:translateY(14px)} .sh-item:nth-child(3){transform:translateY(28px)}
+.sh-item img{width:100%;height:100%;object-fit:cover;display:block}
+.sh-play{position:absolute;left:50%;top:50%;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;background:rgba(255,0,0,.92);display:grid;place-items:center}
+.sh-play svg{width:16px;height:16px;fill:#fff;margin-left:1px}
+.sns-x,.sns-ig{display:flex;align-items:center;gap:14px;padding:20px 24px}
+.sns-x .sns-head,.sns-ig .sns-head{flex:1}
+@media(max-width:900px){.sns-grid{grid-template-columns:1fr}.sns-yt{grid-template-columns:1fr}.sh-row{justify-content:flex-start;padding-bottom:28px}}
+</style>
+  <section class="sec snshub" id="sns" data-screen-label="SNS">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-no">(04b)</span>
+        <h2 class="sec-en">Follow</h2>
+        <p class="sec-ja">SNSで最新情報を</p>
+        <p class="sec-lead">白井とおるサポーターズのSNSです。YouTubeでは市政の重要課題や施政方針を短い縦型動画で紹介しています</p>
+      </div>
+      <div class="sns-grid reveal d1">
+        <div class="sns-card sns-yt">
+          <a class="sns-main" href="https://www.youtube.com/@%E7%99%BD%E4%BA%95%E3%81%A8%E3%81%8A%E3%82%8B%E3%82%B5%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%BA" target="_blank" rel="noopener">
+            <div class="sns-head"><span class="sns-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></span><img class="sns-ava" src="uploads/yt-avatar.jpg" alt="" width="900" height="900"><div><div class="sns-svc">YouTube</div><div class="sns-name">白井とおるサポーターズ</div></div></div>
+            <p class="sns-desc">市政の重要課題や施政方針を、短い縦型動画（ショート）で。前回市長選での公約の進み具合もこちらで紹介しています</p>
+            <span class="sns-cta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> YouTubeでチャンネルを見る →</span>
+          </a>
+          <div class="sh-row">
+            <a class="sh-item" href="https://www.youtube.com/shorts/XkGZ3UEruyY" target="_blank" rel="noopener" aria-label="「公立保育園」前回市長選での選挙公約（市政の重要課題）について Vol.3"><img src="https://i.ytimg.com/vi/XkGZ3UEruyY/oardefault.jpg" alt="" width="1080" height="1920" loading="lazy"><span class="sh-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></a>
+            <a class="sh-item" href="https://www.youtube.com/shorts/GIw02L9aTjE" target="_blank" rel="noopener" aria-label="「都市計画道路」前回市長選での選挙公約（市政の重要課題）について Vol.2"><img src="https://i.ytimg.com/vi/GIw02L9aTjE/oardefault.jpg" alt="" width="1080" height="1920" loading="lazy"><span class="sh-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></a>
+            <a class="sh-item" href="https://www.youtube.com/shorts/VvvjCr8HUII" target="_blank" rel="noopener" aria-label="「新市庁舎等建設の状況」前回市長選での選挙公約（市政の重要課題）について Vol.1"><img src="https://i.ytimg.com/vi/VvvjCr8HUII/oardefault.jpg" alt="" width="1080" height="1920" loading="lazy"><span class="sh-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></a>
+          </div>
+        </div>
+        <div class="sns-side">
+          <a class="sns-card sns-x" href="https://x.com/shiraisupporter" target="_blank" rel="noopener">
+            <span class="sns-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></span>
+            <div class="sns-head"><div><div class="sns-svc">X</div><div class="sns-name">@shiraisupporter</div><span class="sns-cta">フォローする →</span></div></div>
+          </a>
+          <a class="sns-card sns-ig" href="https://www.instagram.com/106shirai106/" target="_blank" rel="noopener">
+            <span class="sns-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></span>
+            <div class="sns-head"><div><div class="sns-svc">Instagram</div><div class="sns-name">@106shirai106</div><span class="sns-cta">フォローする →</span></div></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- YTC-END -->
   <!-- ============ MAGAZINE（サポーターズマガジン・PDF掲載、2026.7.18追加。元に戻す: このセクションを削除し campaign.css の MAGAZINE ブロックも削除、?v=13 に戻す。掲載前バックアップ: backup/） ============ -->
   <section class="sec magazine" id="magazine" data-screen-label="サポーターズマガジン">
     <div class="wrap">
@@ -626,6 +695,9 @@
             <a href="https://www.facebook.com/shirai106" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
             <!-- LINEアイコンは校正指示（LINE完全撤去）で削除。URL: https://line.me/R/ti/p/%40969gipwd -->
             <a href="https://www.instagram.com/shirai106/" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <!-- YTC-START zip外の手動追加。戻し方は YouTube導線_2026-10-20/README.md -->
+<a href="https://www.youtube.com/@%E7%99%BD%E4%BA%95%E3%81%A8%E3%81%8A%E3%82%8B%E3%82%B5%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%BA" aria-label="YouTube（白井とおるサポーターズ）" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+<!-- YTC-END -->
             <a href="https://note.com/shirai106/" aria-label="note" class="sns-note"><svg viewBox="0 0 24 24"><text x="12" y="16.5" text-anchor="middle" font-size="9.5" font-weight="800" font-family="Verdana, sans-serif" fill="#fff">note</text></svg></a>
           </div>
         </div>
