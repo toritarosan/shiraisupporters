@@ -507,6 +507,13 @@
         </div>
 
       <div class="event-list reveal d1" id="event-list"></div>
+      <!-- NEWSFOLD-HTML-START お知らせは新しい5件だけ見せ、残りはボタンで開く（zip外の手動追加。戻し方は お知らせ折りたたみ_2026-10-26/README.md） -->
+      <style>
+        #event-list:not(.is-open) .event.ev-more{display:none}
+        .ev-more-wrap{display:flex;justify-content:center;margin-top:28px}
+      </style>
+      <div class="ev-more-wrap"><button type="button" class="btn btn-ghost" id="ev-toggle" aria-controls="event-list" aria-expanded="false">過去のお知らせを見る <span class="arrow">↓</span></button></div>
+      <!-- NEWSFOLD-HTML-END -->
     </div>
   </section>
 
@@ -936,7 +943,19 @@
     });
 
     // partner-grid removed
-    document.getElementById('event-list').innerHTML = EVENTS.map(e => `<div class="event"><div class="date">${e.md?`<div class="md">${e.md}</div>`:''}</div><div class="info"><div class="ev-title">${e.title}</div>${e.place?`<div class="ev-place">${e.place}</div>`:''}</div>${e.time?`<div class="ev-time">${e.time}</div>`:''}</div>`).join('');
+    // NEWSFOLD-JS-START お知らせは新しい5件だけ見せ、残りはボタンで開く（zip外の手動追加）
+    const EV_SHOW = 5;
+    const evList = document.getElementById('event-list');
+    evList.innerHTML = EVENTS.map((e, i) => `<div class="event${i >= EV_SHOW ? ' ev-more' : ''}"><div class="date">${e.md?`<div class="md">${e.md}</div>`:''}</div><div class="info"><div class="ev-title">${e.title}</div>${e.place?`<div class="ev-place">${e.place}</div>`:''}</div>${e.time?`<div class="ev-time">${e.time}</div>`:''}</div>`).join('');
+    const evToggle = document.getElementById('ev-toggle');
+    if (EVENTS.length <= EV_SHOW) evToggle.parentElement.style.display = 'none';
+    else {
+      let evOpen = false;
+      const evLabel = () => { evToggle.innerHTML = evOpen ? '閉じる <span class="arrow">↑</span>' : `過去のお知らせを見る（${EVENTS.length - EV_SHOW}件）<span class="arrow">↓</span>`; evToggle.setAttribute('aria-expanded', String(evOpen)); };
+      evToggle.addEventListener('click', () => { evOpen = !evOpen; evList.classList.toggle('is-open', evOpen); evLabel(); if (!evOpen) document.getElementById('events').scrollIntoView({ behavior:'smooth', block:'start' }); });
+      evLabel();
+    }
+    // NEWSFOLD-JS-END
 
     renderChips(); renderCards();
 
