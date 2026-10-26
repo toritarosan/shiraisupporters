@@ -145,6 +145,71 @@
 <span class="kfA-go" aria-hidden="true">→</span>
 </div></a>
 <!-- KIFU-LINK-END -->
+<!-- OPINION-START 見本（ご意見フォーム_2026-10-25/build.py） -->
+<style>
+.of{display:grid;gap:16px}
+.of-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.of-f{display:grid;gap:6px;min-width:0}
+.of-l{font:700 .92rem/1.4 var(--font-round);color:var(--ink)}
+.of-l em{font-style:normal;font-weight:500;font-size:.78rem;color:var(--ink-faint);margin-left:.6em}
+.of-l em.req{color:var(--magenta-deep);font-weight:700}
+.of input,.of select,.of textarea{width:100%;font:500 1rem/1.6 var(--font-jp);color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;min-height:48px;transition:border-color .2s,box-shadow .2s}
+.of textarea{resize:vertical;min-height:140px}
+.of input:focus,.of select:focus,.of textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 4px color-mix(in srgb,var(--blue) 22%,transparent)}
+.of-act{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.of-send{border:0;cursor:pointer;font-size:1rem;min-height:48px}
+.of-status{font-size:.88rem;color:var(--ink-soft);margin:0}
+@media(max-width:640px){.of-row{grid-template-columns:1fr}}
+
+/* 案B 開く帯 */
+.op-b{background:var(--blue-soft);border-bottom:1px solid rgba(0,0,0,.06)}
+.op-b summary{list-style:none;cursor:pointer}
+.op-b summary::-webkit-details-marker{display:none}
+.op-b .bar{display:flex;align-items:center;gap:12px 16px;min-height:56px;padding-top:10px;padding-bottom:10px}
+.op-b .tag{flex:none;font:900 .8rem/1 var(--font-round);letter-spacing:.08em;background:var(--blue-deep);color:#fff;padding:5px 12px;border-radius:999px}
+.op-b .txt{flex:1 1 auto;min-width:0;line-height:1.5}
+.op-b .txt b{font:900 clamp(1rem,2vw,1.15rem)/1.4 var(--font-round)}
+.op-b .txt small{display:block;font-size:.82rem;color:var(--ink-soft)}
+.op-b .go{flex:none;width:36px;height:36px;border-radius:50%;background:var(--blue-deep);color:#fff;display:grid;place-items:center;font-weight:900;transition:transform .25s}
+.op-b details[open] .go{transform:rotate(90deg)}
+.op-b summary:focus-visible{outline:3px solid var(--blue-deep);outline-offset:-3px}
+.op-b .panel{padding-bottom:clamp(24px,3vw,36px)}
+.op-b .panel .of{background:#fff;border-radius:var(--r-md);padding:clamp(18px,3vw,32px);box-shadow:var(--shadow-sm);max-width:860px}
+</style>
+<div class="op-b" id="opinion">
+  <details>
+    <summary><div class="wrap bar"><span class="tag">ご意見</span><span class="txt"><b>ご意見・ご要望をお寄せください</b><small>このサイトや白井とおるへのご意見・ご要望がありましたら、こちらのフォームからお寄せください</small></span><span class="go" aria-hidden="true">→</span></div></summary>
+    <div class="wrap panel"><form class="of" id="of-b" novalidate>
+  <div class="of-row">
+    <label class="of-f"><span class="of-l">お名前<em>任意</em></span><input type="text" name="name" autocomplete="name"></label>
+    <label class="of-f"><span class="of-l">メールアドレス<em>任意・返信を希望される方</em></span><input type="email" name="email" autocomplete="email" inputmode="email"></label>
+  </div>
+  <label class="of-f"><span class="of-l">どちらについてのご意見ですか<em>任意</em></span>
+    <select name="topic"><option value="">選んでください</option><option>このサイトについて</option><option>白井とおるの活動・政策について</option><option>その他</option></select></label>
+  <label class="of-f"><span class="of-l">ご意見・ご要望<em class="req">必須</em></span><textarea name="message" rows="5" required></textarea></label>
+  <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+  <div class="of-act"><button type="submit" class="btn btn-pop of-send">送信する <span class="arrow">→</span></button><p class="of-status" role="status" aria-live="polite"></p></div>
+</form></div>
+  </details>
+</div>
+<script>
+(function(){
+ var EP='https://script.google.com/macros/s/AKfycbyBLwLiUea0yXG-Tj8aeVvRizEvoElMVp_oqhTftQMbML5cCBWfEWBOSOorPxMke1my/exec';
+ document.querySelectorAll('form.of').forEach(function(f){
+  var m=f.querySelector('textarea'),s=f.querySelector('.of-status'),b=f.querySelector('.of-send'),em=f.querySelector('input[type=email]');
+  f.addEventListener('submit',function(e){
+   e.preventDefault();
+   if(!m.value.trim()){s.textContent='ご意見・ご要望をご記入ください';m.focus();return;}
+   if(em.value&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value)){s.textContent='メールアドレスの形式をご確認ください';em.focus();return;}
+   b.disabled=true;s.textContent='送信しています…';
+   fetch(EP,{method:'POST',mode:'no-cors',body:new URLSearchParams(new FormData(f))})
+    .then(function(){f.reset();s.textContent='送信しました。ご意見・ご要望をありがとうございます。';b.disabled=false;})
+    .catch(function(){s.textContent='送信できませんでした。通信状況をご確認のうえ、もう一度お試しください。';b.disabled=false;});
+  });
+ });
+})();
+</script>
+<!-- OPINION-END -->
 <!-- ============ INTRO BAND ============ -->
   <div class="intro-band">
     <div class="wrap intro-inner reveal">
