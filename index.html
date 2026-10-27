@@ -181,8 +181,8 @@
     <summary><div class="wrap bar"><span class="tag">ご意見</span><span class="txt"><b>ご意見・ご要望をお寄せください</b><small>このサイトや白井とおるへのご意見・ご要望がありましたら、こちらのフォームからお寄せください</small></span><span class="go" aria-hidden="true">→</span></div></summary>
     <div class="wrap panel"><form class="of" id="of-b" novalidate>
   <div class="of-row">
-    <label class="of-f"><span class="of-l">お名前<em>任意</em></span><input type="text" name="name" autocomplete="name"></label>
-    <label class="of-f"><span class="of-l">メールアドレス<em>任意・返信を希望される方</em></span><input type="email" name="email" autocomplete="email" inputmode="email"></label>
+    <label class="of-f"><span class="of-l">お名前<em class="req">必須</em></span><input type="text" name="name" autocomplete="name" required></label>
+    <label class="of-f"><span class="of-l">メールアドレス<em class="req">必須</em></span><input type="email" name="email" autocomplete="email" inputmode="email" required></label>
   </div>
   <label class="of-f"><span class="of-l">どちらについてのご意見ですか<em>任意</em></span>
     <select name="topic"><option value="">選んでください</option><option>このサイトについて</option><option>白井とおるの活動・政策について</option><option>その他</option></select></label>
@@ -196,11 +196,13 @@
 (function(){
  var EP='https://script.google.com/macros/s/AKfycbyBLwLiUea0yXG-Tj8aeVvRizEvoElMVp_oqhTftQMbML5cCBWfEWBOSOorPxMke1my/exec';
  document.querySelectorAll('form.of').forEach(function(f){
-  var m=f.querySelector('textarea'),s=f.querySelector('.of-status'),b=f.querySelector('.of-send'),em=f.querySelector('input[type=email]');
+  var m=f.querySelector('textarea'),s=f.querySelector('.of-status'),b=f.querySelector('.of-send'),em=f.querySelector('input[type=email]'),nm=f.querySelector('input[name=name]');
   f.addEventListener('submit',function(e){
    e.preventDefault();
+   if(!nm.value.trim()){s.textContent='お名前をご記入ください';nm.focus();return;}
+   if(!em.value.trim()){s.textContent='メールアドレスをご記入ください';em.focus();return;}
+   if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value.trim())){s.textContent='メールアドレスの形式をご確認ください';em.focus();return;}
    if(!m.value.trim()){s.textContent='ご意見・ご要望をご記入ください';m.focus();return;}
-   if(em.value&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value)){s.textContent='メールアドレスの形式をご確認ください';em.focus();return;}
    b.disabled=true;s.textContent='送信しています…';
    fetch(EP,{method:'POST',mode:'no-cors',body:new URLSearchParams(new FormData(f))})
     .then(function(){f.reset();s.textContent='送信しました。ご意見・ご要望をありがとうございます。';b.disabled=false;})
