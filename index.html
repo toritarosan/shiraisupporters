@@ -45,6 +45,7 @@
       <nav class="nav">
         <a href="#message" class="nav-link">メッセージ</a>
         <a href="#achievements" class="nav-link">4年間の成果</a>
+        <a href="#kodomo" class="nav-link">こどもページ</a><!-- KODOMO-NAV -->
         <a href="#profile" class="nav-link">プロフィール</a>
         <a href="#events" class="nav-link">お知らせ</a>
         <a href="#column" class="nav-link">連載</a>
@@ -55,6 +56,7 @@
     <nav class="mobile-nav" id="mobile-nav">
       <a href="#message" class="nav-link">メッセージ</a>
       <a href="#achievements" class="nav-link">4年間の成果</a>
+      <a href="#kodomo" class="nav-link">こどもページ</a><!-- KODOMO-NAV -->
       <!-- NAV2026-START zip外の手動追加。戻し方は ナビにリンク追加_2026-10-08/README.md -->
       <a href="https://shiraisupporters.tokyo/koyaku2022/" class="nav-link">2022年公約の取組み結果</a>
       <a href="https://shiraisupporters.tokyo/seisaku2026/" class="nav-link">政策2026</a>
@@ -289,6 +291,81 @@
       <div class="adm-body"><p id="adm-text"></p></div>
     </dialog>
   </section>
+
+<!-- KODOMO-START 子ども向けページへの入口セクション(2026-11-01 案)。zip外の手動追加。戻す=この START〜END のコメントで囲まれた部分を消す -->
+<section class="sec kodomo" id="kodomo" data-screen-label="小学生・中学生のみなさんへ">
+<style>
+/* このセクションだけの見た目。本番の変数(--blue, --magenta, --yellow, --ink, --font-round, --font-en, --ease, --maxw)を使う */
+.sec.kodomo{background:var(--yellow-soft,#fffcd1);overflow:hidden;padding-top:clamp(56px,7vw,96px);padding-bottom:clamp(56px,7vw,96px)}
+.sec.kodomo .kd-wrap{max-width:var(--maxw,1160px);margin:0 auto;padding:0 28px}
+.sec.kodomo .kd-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,56px);align-items:center}
+.sec.kodomo .kd-kicker{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-round);font-weight:900;font-size:.95rem;color:var(--blue-ink,#005a91);background:#fff;border-radius:999px;padding:6px 14px 6px 10px;box-shadow:var(--shadow-sm,0 2px 10px rgba(20,40,70,.07))}
+.sec.kodomo .kd-kicker .dot{width:10px;height:10px;border-radius:50%;background:var(--magenta,#e4007f)}
+.sec.kodomo h2.kd-title{font-family:var(--font-round);font-weight:900;line-height:1.3;font-size:clamp(1.9rem,4.6vw,3rem);color:var(--ink,#221815);margin:16px 0 0;letter-spacing:-.01em}
+.sec.kodomo h2.kd-title .hl{background:linear-gradient(transparent 62%,var(--yellow,#fff100) 62%)}
+.sec.kodomo .kd-lead{font-family:var(--font-round);color:var(--ink-soft,#5a4e4a);font-size:1.02rem;line-height:1.9;margin:14px 0 0;max-width:34em}
+.sec.kodomo .kd-lead rt{font-size:.5em;font-weight:500}
+/* ふきだし付きキャラ */
+.sec.kodomo .kd-char{display:flex;align-items:flex-end;gap:14px;margin-top:22px}
+.sec.kodomo .kd-char img{width:112px;height:auto;filter:drop-shadow(0 6px 6px rgba(20,40,70,.12));animation:kd-bob 2.6s ease-in-out infinite}
+@keyframes kd-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.sec.kodomo .kd-bubble{position:relative;background:#fff;border:3px solid var(--blue,#00AEEF);border-radius:18px;padding:12px 16px;font-family:var(--font-round);font-weight:700;color:var(--ink,#221815);line-height:1.7;font-size:1rem;box-shadow:var(--shadow-sm,0 2px 10px rgba(20,40,70,.07))}
+.sec.kodomo .kd-bubble::before{content:"";position:absolute;left:-14px;bottom:18px;border:9px solid transparent;border-right-color:var(--blue,#00AEEF)}
+.sec.kodomo .kd-bubble .nm{display:block;font-size:.78rem;color:var(--blue-ink,#005a91);margin-bottom:2px}
+/* 4枚のカード(押すと遊べる) */
+.sec.kodomo .kd-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sec.kodomo .kd-card{position:relative;display:flex;flex-direction:column;gap:6px;min-height:150px;padding:18px 18px 16px;border-radius:22px;background:#fff;color:var(--ink,#221815);text-decoration:none;border:3px solid transparent;box-shadow:0 10px 24px rgba(20,40,70,.08);transition:transform .35s var(--ease,ease),box-shadow .35s var(--ease,ease),border-color .2s;overflow:hidden}
+.sec.kodomo .kd-card::after{content:"";position:absolute;right:-26px;bottom:-26px;width:96px;height:96px;border-radius:50%;background:var(--kd-c,var(--blue,#00AEEF));opacity:.16;transition:transform .45s var(--ease,ease)}
+.sec.kodomo .kd-card:hover,.sec.kodomo .kd-card:focus-visible{transform:translateY(-6px) rotate(-1deg);border-color:var(--kd-c,var(--blue,#00AEEF));box-shadow:0 18px 32px rgba(20,40,70,.14);outline:none}
+.sec.kodomo .kd-card:hover::after{transform:scale(2.2)}
+.sec.kodomo .kd-card .ic{font-size:2.2rem;line-height:1;position:relative;z-index:1}
+.sec.kodomo .kd-card b{font-family:var(--font-round);font-weight:900;font-size:1.15rem;line-height:1.4;position:relative;z-index:1}
+.sec.kodomo .kd-card b rt{font-size:.5em;font-weight:500}
+.sec.kodomo .kd-card span.d{font-family:var(--font-round);font-size:.86rem;color:var(--ink-soft,#5a4e4a);line-height:1.6;position:relative;z-index:1}
+.sec.kodomo .kd-card .go{margin-top:auto;align-self:flex-end;font-family:var(--font-en);font-weight:900;font-size:.9rem;color:var(--kd-c,var(--blue,#00AEEF));position:relative;z-index:1}
+.sec.kodomo .kd-card.c1{--kd-c:var(--blue,#00AEEF)}
+.sec.kodomo .kd-card.c2{--kd-c:var(--magenta,#e4007f)}
+.sec.kodomo .kd-card.c3{--kd-c:#2f7d4f}
+.sec.kodomo .kd-card.c4{--kd-c:#e38a00}
+.sec.kodomo .kd-card.wide{grid-column:1/-1;flex-direction:row;align-items:center;gap:16px;min-height:0;padding:14px 18px;background:var(--blue-soft,#eaf7fe)}
+.sec.kodomo .kd-card.wide .ic{font-size:1.8rem}
+.sec.kodomo .kd-card.wide b{font-size:1.05rem}
+.sec.kodomo .kd-card.wide .go{margin-top:0;margin-left:auto}
+.sec.kodomo .kd-note{font-family:var(--font-round);font-size:.8rem;color:var(--ink-soft,#5a4e4a);margin:12px 0 0}
+/* 背景のまち(薄く) */
+.sec.kodomo .kd-town{position:absolute;right:-6%;bottom:-8%;width:min(62vw,620px);opacity:.14;pointer-events:none;user-select:none}
+@media (max-width:860px){
+  .sec.kodomo .kd-grid{grid-template-columns:1fr}
+  .sec.kodomo .kd-town{width:90vw;right:-20%;bottom:-6%;opacity:.1}
+  .sec.kodomo .kd-char img{width:92px}
+}
+@media (max-width:420px){.sec.kodomo .kd-cards{grid-template-columns:1fr}.sec.kodomo .kd-card{min-height:0}}
+@media (prefers-reduced-motion:reduce){.sec.kodomo .kd-char img{animation:none}.sec.kodomo .kd-card{transition:none}}
+</style>
+  <img class="kd-town" src="uploads/illust/town.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
+  <div class="kd-wrap">
+    <div class="kd-grid">
+      <div class="reveal">
+        <span class="kd-kicker"><span class="dot" aria-hidden="true"></span>小学生・中学生のみなさんへ</span>
+        <h2 class="kd-title">市長の しごとって、<br>なんだろう？<br><span class="hl">あそびながら 知ろう。</span></h2>
+        <p class="kd-lead">小金井のこれからを、<ruby>子<rt>こ</rt></ruby>ども<ruby>向<rt>む</rt></ruby>けのことばと ふりがなで まとめました。<ruby>地図<rt>ちず</rt></ruby>をさんぽしたり、クイズに <ruby>答<rt>こた</rt></ruby>えたり、パズルで あそんだり。<ruby>中学生<rt>ちゅうがくせい</rt></ruby>むけのページもあります。</p>
+        <div class="kd-char">
+          <img src="kodomo/assets/hamuta/kogaham_joy.png" alt="" width="240" height="290" loading="lazy" decoding="async">
+          <p class="kd-bubble"><span class="nm">こがハムくん</span>ぼく、こがハムくん。<ruby>小金井<rt>こがねい</rt></ruby>の まちを いっしょに <ruby>歩<rt>ある</rt></ruby>こう！</p>
+        </div>
+      </div>
+      <div class="kd-cards reveal">
+        <a class="kd-card c1" href="kodomo/map.html"><span class="ic" aria-hidden="true">🗺️</span><b>こがハムくんと <ruby>小金井<rt>こがねい</rt></ruby>さんぽ</b><span class="d"><ruby>地図<rt>ちず</rt></ruby>をタッチすると、こがハムくんが <ruby>歩<rt>ある</rt></ruby>いていくよ。<ruby>着<rt>つ</rt></ruby>いたら クイズ！</span><span class="go">PLAY →</span></a>
+        <a class="kd-card c2" href="kodomo/quiz.html"><span class="ic" aria-hidden="true">❓</span><b>こがハムくんの クイズ</b><span class="d">ぜんぶで 9もん。<ruby>市長<rt>しちょう</rt></ruby>は ひとりで <ruby>決<rt>き</rt></ruby>められる？</span><span class="go">PLAY →</span></a>
+        <a class="kd-card c3" href="kodomo/puzzle.html"><span class="ic" aria-hidden="true">🚌</span><b>バスの パズル</b><span class="d">CoCoバスの <ruby>絵<rt>え</rt></ruby>を もとに もどそう。かんたん と むずかしい。</span><span class="go">PLAY →</span></a>
+        <a class="kd-card c4" href="kodomo/kodomo.html"><span class="ic" aria-hidden="true">📖</span><b><ruby>小学生<rt>しょうがくせい</rt></ruby>のきみへ</b><span class="d">ふりがなつき。<ruby>場所<rt>ばしょ</rt></ruby>ごとに、なにが <ruby>変<rt>か</rt></ruby>わるかを <ruby>読<rt>よ</rt></ruby>めるよ。</span><span class="go">READ →</span></a>
+        <a class="kd-card c1 wide" href="kodomo/chugaku.html"><span class="ic" aria-hidden="true">📘</span><span><b>中学生のみなさんへ</b><br><span class="d">政策のもとの文で読む。市長と市議会のしくみ、10代に関係する18の政策</span></span><span class="go">READ →</span></a>
+      </div>
+    </div>
+    <p class="kd-note">発行：政治団体 白井とおるサポーターズ。答えや記録はどこにも送られません。</p>
+  </div>
+</section>
+<!-- KODOMO-END -->
 
   <div class="wave to-alt"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,40 C260,10 520,60 760,38 C1020,14 1220,58 1440,34 L1440,70 L0,70 Z"/></svg></div>
 
