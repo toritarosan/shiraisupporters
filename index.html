@@ -30,6 +30,11 @@
   .intro-inner.has-il{flex-direction:column;align-items:flex-start;gap:18px}.il-intro{height:auto;width:100%;max-width:360px;align-self:flex-end}
   .sec-head.has-il{padding-right:0}.sec-head .il-head{top:auto;bottom:100%;transform:none;right:0;height:86px;margin-bottom:6px}}
 </style><!-- IL-END -->
+<style>/* KODOMO-NAVSTYLE zip外の手動追加。戻し方は tools/apply_kodomo_nav.py --revert */
+.nav-link.nav-kodomo{background:var(--ink-soft);color:#fff}
+.nav-link.nav-kodomo:hover{background:var(--ink);color:#fff}
+.mobile-nav .nav-link.nav-kodomo{padding-left:14px;padding-right:14px;align-self:flex-start}
+</style><!-- /KODOMO-NAVSTYLE -->
 </head>
 <body>
 
@@ -45,7 +50,7 @@
       <nav class="nav">
         <a href="#message" class="nav-link">メッセージ</a>
         <a href="#achievements" class="nav-link">4年間の成果</a>
-        <a href="#kodomo" class="nav-link">こどもページ</a><!-- KODOMO-NAV -->
+        <a href="#kodomo" class="nav-link nav-kodomo">こどもページ</a><!-- KODOMO-NAV -->
         <a href="#profile" class="nav-link">プロフィール</a>
         <a href="#events" class="nav-link">お知らせ</a>
         <a href="#column" class="nav-link">連載</a>
@@ -56,7 +61,7 @@
     <nav class="mobile-nav" id="mobile-nav">
       <a href="#message" class="nav-link">メッセージ</a>
       <a href="#achievements" class="nav-link">4年間の成果</a>
-      <a href="#kodomo" class="nav-link">こどもページ</a><!-- KODOMO-NAV -->
+      <a href="#kodomo" class="nav-link nav-kodomo">こどもページ</a><!-- KODOMO-NAV -->
       <!-- NAV2026-START zip外の手動追加。戻し方は ナビにリンク追加_2026-10-08/README.md -->
       <a href="https://shiraisupporters.tokyo/koyaku2022/" class="nav-link">2022年公約の取組み結果</a>
       <a href="https://shiraisupporters.tokyo/seisaku2026/" class="nav-link">政策2026</a>
