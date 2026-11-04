@@ -237,7 +237,7 @@
 </script>
 <!-- OPINION-END -->
 <!-- ============ INTRO BAND ============ -->
-  <div class="intro-band">
+  <div class="intro-band" id="intro">
     <div class="wrap intro-inner reveal has-il">
       <p class="intro-lead">新しい<br>小金井市へ。</p><!-- IL-START intro --><picture><source srcset="uploads/illust/town.webp" type="image/webp"><img class="il il-intro" src="uploads/illust/town.png" alt="" aria-hidden="true" width="1200" height="795" decoding="async"></picture><!-- IL-END --><!-- 元は「次の」 -->
     </div>
@@ -761,7 +761,7 @@
       <!-- IL-START head-magazine --><img class="il il-head" src="uploads/illust/pose_magazine.png" alt="" aria-hidden="true" width="277" height="380" loading="lazy" decoding="async"><!-- IL-END --></div>
       <div class="mag-grid">
         <!-- MAG-VOL4-START Vol.4（zip外の手動追加。再適用= shirai-web/tools/apply_magazine_vol4.py） -->
-        <div class="mag-issue reveal">
+        <div class="mag-issue reveal" id="mag-vol4">
           <div class="mag-pages portrait">
             <a class="mag-front" href="uploads/supporters_magazine_vol4.pdf" target="_blank" rel="noopener"><img src="koganei-campaign/img/mag-v4p1.png" alt="サポーターズマガジン Vol.4 表紙" width="835" height="1180" loading="lazy"></a>
             <a class="mag-back" href="uploads/supporters_magazine_vol4.pdf" target="_blank" rel="noopener"><img src="koganei-campaign/img/mag-v4p2.png" alt="サポーターズマガジン Vol.4 裏表紙" width="835" height="1180" loading="lazy"></a>
@@ -778,7 +778,7 @@
         </div>
         <!-- MAG-VOL4-END -->
         <!-- MAG-VOL3-START Vol.3（zip外の手動追加。再適用= shirai-web/tools/apply_magazine_vol3.py） -->
-        <div class="mag-issue reveal">
+        <div class="mag-issue reveal" id="mag-vol3">
           <div class="mag-pages portrait">
             <a class="mag-front" href="uploads/supporters_magazine_vol3.pdf" target="_blank" rel="noopener"><img src="koganei-campaign/img/mag-v3p1.png" alt="サポーターズマガジン Vol.3 表面" width="835" height="1180" loading="lazy"></a>
             <a class="mag-back" href="uploads/supporters_magazine_vol3.pdf" target="_blank" rel="noopener"><img src="koganei-campaign/img/mag-v3p2.png" alt="サポーターズマガジン Vol.3 裏面" width="835" height="1180" loading="lazy"></a>
@@ -794,7 +794,7 @@
           </div>
         </div>
         <!-- MAG-VOL3-END -->
-        <div class="mag-issue reveal">
+        <div class="mag-issue reveal" id="mag-vol2">
           <div class="mag-pages portrait">
             <a class="mag-front" href="uploads/supporters_magazine_vol2.pdf" target="_blank" rel="noopener"><img src="koganei-campaign/img/mag-v2p1.png" alt="サポーターズマガジン Vol.2 表面" width="842" height="1180" loading="lazy"></a>
             <a class="mag-back" href="uploads/supporters_magazine_vol2.pdf" target="_blank" rel="noopener"><img src="koganei-campaign/img/mag-v2p2.png" alt="サポーターズマガジン Vol.2 裏面" width="841" height="1180" loading="lazy"></a>
@@ -809,7 +809,7 @@
             </div>
           </div>
         </div>
-        <div class="mag-issue reveal d1">
+        <div class="mag-issue reveal d1" id="mag-vol1">
           <div class="mag-pages landscape">
             <a class="mag-front" href="uploads/supporters_magazine_vol1.pdf" target="_blank" rel="noopener"><img src="koganei-campaign/img/mag-v1p1.png" alt="サポーターズマガジン Vol.1 表面" width="927" height="660" loading="lazy"></a>
             <a class="mag-back" href="uploads/supporters_magazine_vol1.pdf" target="_blank" rel="noopener"><img src="koganei-campaign/img/mag-v1p2.png" alt="サポーターズマガジン Vol.1 裏面" width="927" height="660" loading="lazy"></a>
@@ -1299,6 +1299,9 @@ document.addEventListener('keydown',ev=>{if(!rd.classList.contains('open'))retur
 })();
 </script>
 <!-- CARD-ALIGNMENT-END -->
+<!-- ANCHOR-START zip外の手動追加。戻し方は tools/apply_anchors.py --revert -->
+<style>#intro,#opinion{scroll-margin-top:84px}#mag-vol4,#mag-vol3,#mag-vol2,#mag-vol1{scroll-margin-top:110px}</style>
+<!-- ANCHOR-END -->
 </body>
 <template id="__bundler_thumbnail">
   <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
