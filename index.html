@@ -132,6 +132,54 @@
     </div>
   </section>
   <!-- HERO2026-END -->
+<!-- GAITO-START zip外の手動追加。駅前の街頭活動予定。戻し方は 街宣予定_2026-11-08/build_gaito.py --revert -->
+<style>
+.gaito{background:var(--blue-soft);padding:28px 0 30px;border-bottom:1px solid rgba(0,0,0,.05)}
+.gaito[hidden]{display:none}
+.gaito-head{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 14px;margin-bottom:14px}
+.gaito-head h2{font-family:var(--font-round);font-weight:900;font-size:clamp(1.25rem,2.6vw,1.6rem);color:var(--ink);margin:0}
+.gaito-head p{margin:0;font-size:.85rem;color:var(--ink-soft)}
+.gaito-day{background:#fff;border-radius:var(--r-lg,18px);box-shadow:var(--shadow-sm);padding:18px 20px}
+.gaito-date{display:flex;align-items:center;gap:10px;font-family:var(--font-round);font-weight:900;font-size:1.15rem;margin-bottom:8px}
+.gaito-date .lbl{font-size:.78rem;letter-spacing:.06em;background:var(--blue-deep);color:#fff;padding:3px 10px;border-radius:999px}
+.gaito-date .lbl.next{background:var(--ink-soft)}
+.gaito-date .wd{font-size:.8rem;background:var(--ink);color:#fff;padding:2px 8px;border-radius:6px}
+.gaito-list{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.gaito-list li{display:grid;grid-template-columns:8.6em 1fr;gap:12px;align-items:baseline;padding:8px 0;border-top:1px dashed var(--line)}
+.gaito-list li:first-child{border-top:0}
+.gaito-list .tm{font-family:var(--font-en);font-weight:800;font-size:1.05rem;color:var(--blue-deep);white-space:nowrap}
+.gaito-list .pl{font-weight:700;line-height:1.5}
+.gaito-list .pl small{display:block;font-weight:500;font-size:.8rem;color:var(--ink-soft)}
+.gaito-more{margin-top:12px}
+.gaito-more summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:8px;font-family:var(--font-round);font-weight:800;
+  color:var(--blue-deep);background:#fff;border:2px solid var(--blue-deep);border-radius:999px;padding:9px 18px}
+.gaito-more summary::-webkit-details-marker{display:none}
+.gaito-more summary::after{content:"↓";transition:transform .2s}
+.gaito-more[open] summary::after{transform:rotate(180deg)}
+.gaito-more .gaito-day{margin-top:10px}
+.gaito-note{margin:12px 0 0;font-size:.8rem;color:var(--ink-soft)}
+@media (max-width:760px){.gaito{padding:22px 0 24px}.gaito-day{padding:14px 16px}
+  .gaito-list li{grid-template-columns:1fr;gap:2px}.gaito-list .tm{font-size:1rem}}
+</style>
+<section class="gaito" id="gaito" aria-labelledby="gaito-title" hidden><div class="wrap">
+<div class="gaito-head"><h2 id="gaito-title">駅前での街頭活動の予定</h2><p>白井とおるが駅前に立ちます。お気軽にお声がけください</p></div>
+<div id="gaito-body"></div>
+<p class="gaito-note">状況等により時間・場所が変更になる場合があります</p>
+</div></section>
+<script>(function(){
+var D=[{"d":"2026-11-08","md":"11/8","w":"日","items":[{"s":"14:30","e":"16:00","p":"東小金井駅南口","n":""},{"s":"17:00","e":"18:00","p":"武蔵小金井駅南口","n":"南口および交番裏"}]},{"d":"2026-11-09","md":"11/9","w":"月","items":[{"s":"6:30","e":"8:30","p":"東小金井駅南口","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅北口","n":""}]},{"d":"2026-11-10","md":"11/10","w":"火","items":[{"s":"6:30","e":"8:30","p":"東小金井駅北口","n":""},{"s":"18:00","e":"20:00","p":"武蔵小金井駅北口","n":""},{"s":"18:00","e":"20:00","p":"武蔵小金井駅南口","n":""}]},{"d":"2026-11-11","md":"11/11","w":"水","items":[{"s":"6:30","e":"8:30","p":"東小金井駅nonowa北","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅nonowa北","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅nonowa南","n":""}]},{"d":"2026-11-12","md":"11/12","w":"木","items":[{"s":"6:30","e":"8:30","p":"武蔵小金井駅北口","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅南口","n":""}]},{"d":"2026-11-13","md":"11/13","w":"金","items":[{"s":"6:30","e":"8:30","p":"武蔵小金井駅南口","n":""},{"s":"17:00","e":"19:00","p":"ソコラ前（南口フェスティバルコート前）","n":""},{"s":"17:30","e":"20:00","p":"武蔵小金井駅南口","n":""}]},{"d":"2026-11-14","md":"11/14","w":"土","items":[{"s":"12:00","e":"13:00","p":"武蔵小金井駅北口","n":""},{"s":"14:30","e":"15:30","p":"ソコラ前（南口フェスティバルコート前）","n":""},{"s":"15:45","e":"17:00","p":"武蔵小金井駅南口","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅北口","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅南口","n":""}]}],sec=document.getElementById('gaito');if(!sec)return;
+var now=new Date(Date.now()+9*3600*1000),today=now.toISOString().slice(0,10);
+var up=D.filter(function(x){return x.d>=today});if(!up.length){sec.hidden=true;return}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function day(x,lbl,cls){var h='<div class="gaito-day"><div class="gaito-date">'+(lbl?'<span class="lbl'+(cls?' '+cls:'')+'">'+lbl+'</span>':'')+
+ esc(x.md)+'<span class="wd">'+esc(x.w)+'</span></div><ul class="gaito-list">';
+ x.items.forEach(function(i){h+='<li><span class="tm">'+esc(i.s)+'〜'+esc(i.e)+'</span><span class="pl">'+esc(i.p)+(i.n?'<small>'+esc(i.n)+'</small>':'')+'</span></li>'});
+ return h+'</ul></div>'}
+var first=up[0],h=day(first,first.d===today?'今日':'次の予定',first.d===today?'':'next'),rest=up.slice(1);
+if(rest.length){h+='<details class="gaito-more"><summary>'+(first.d===today?'明日以降':'その後')+'の予定（'+rest.length+'日分）を見る</summary>';
+ rest.forEach(function(x){h+=day(x)});h+='</details>'}
+document.getElementById('gaito-body').innerHTML=h;sec.hidden=false})();</script>
+<!-- GAITO-END -->
 
   <!-- CHOSHA-LINK-START 庁舎見直しページへの帯(案A) 2026-10-17 -->
 <style>
