@@ -1302,6 +1302,23 @@ document.addEventListener('keydown',ev=>{if(!rd.classList.contains('open'))retur
 <!-- ANCHOR-START zip外の手動追加。戻し方は tools/apply_anchors.py --revert -->
 <style>#intro,#opinion{scroll-margin-top:84px}#mag-vol4,#mag-vol3,#mag-vol2,#mag-vol1{scroll-margin-top:110px}</style>
 <!-- ANCHOR-END -->
+<!-- MNAV-START zip外の手動追加。スマホ下部ナビ（案A）。戻し方は スマホ下部ナビ_2026-11-04/README.md -->
+<style>
+.mnav-a{display:none}
+@media (max-width:760px){
+  .mnav-a{position:fixed;left:0;right:0;bottom:0;z-index:90;display:grid;grid-template-columns:repeat(5,1fr);
+    background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(0,40,70,.08);
+    padding:6px 2px calc(6px + env(safe-area-inset-bottom))}
+  .mnav-a a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:4px 0;color:var(--ink-soft);
+    font:700 .66rem/1.2 var(--font-round);text-align:center}
+  .mnav-a svg{width:24px;height:24px;fill:none;stroke:var(--blue-deep);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .mnav-a a:active{background:var(--blue-soft);border-radius:10px}
+  .rd.open ~ .mnav-a,body:has(.rd.open) .mnav-a{display:none}
+  body{padding-bottom:68px}
+}
+</style>
+<nav class="mnav-a" aria-label="主なページ"><a href="https://shiraisupporters.tokyo/seisaku2026/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg><span>政策</span></a><a href="#profile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span>プロフィール</span></a><a href="#kodomo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg><span>こども</span></a><a href="#column"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H4zM20 5h-6a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h6z"/></svg><span>連載</span></a><a href="https://shiraisupporters.tokyo/koyaku2022/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 9l2 2 4-4M8 16h8"/></svg><span>公約の結果</span></a></nav>
+<!-- MNAV-END -->
 </body>
 <template id="__bundler_thumbnail">
   <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
