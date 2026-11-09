@@ -143,6 +143,8 @@
 .gaito-date{display:flex;align-items:center;gap:10px;font-family:var(--font-round);font-weight:900;font-size:1.15rem;margin-bottom:8px}
 .gaito-date .lbl{font-size:.78rem;letter-spacing:.06em;background:var(--blue-deep);color:#fff;padding:3px 10px;border-radius:999px}
 .gaito-date .lbl.next{background:var(--ink-soft)}
+.gaito-date .lbl.tmr{background:var(--blue)}
+#gaito-body > .gaito-day + .gaito-day{margin-top:10px}
 .gaito-date .wd{font-size:.8rem;background:var(--ink);color:#fff;padding:2px 8px;border-radius:6px}
 .gaito-list{list-style:none;margin:0;padding:0;display:grid;gap:6px}
 .gaito-list li{display:grid;grid-template-columns:8.6em 1fr;gap:12px;align-items:baseline;padding:8px 0;border-top:1px dashed var(--line)}
@@ -167,7 +169,7 @@
 <p class="gaito-note">状況等により時間・場所が変更になる場合があります</p>
 </div></section>
 <script>(function(){
-var D=[{"d":"2026-11-08","md":"11/8","w":"日","items":[{"s":"14:30","e":"16:00","p":"東小金井駅南口","n":""},{"s":"17:00","e":"18:00","p":"武蔵小金井駅南口","n":"南口および交番裏"}]},{"d":"2026-11-09","md":"11/9","w":"月","items":[{"s":"6:30","e":"8:30","p":"東小金井駅南口","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅北口","n":""}]},{"d":"2026-11-10","md":"11/10","w":"火","items":[{"s":"6:30","e":"8:30","p":"東小金井駅北口","n":""},{"s":"18:00","e":"20:00","p":"武蔵小金井駅北口","n":""},{"s":"18:00","e":"20:00","p":"武蔵小金井駅南口","n":""}]},{"d":"2026-11-11","md":"11/11","w":"水","items":[{"s":"6:30","e":"8:30","p":"東小金井駅nonowa北","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅nonowa北","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅nonowa南","n":""}]},{"d":"2026-11-12","md":"11/12","w":"木","items":[{"s":"6:30","e":"8:30","p":"武蔵小金井駅北口","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅南口","n":""}]},{"d":"2026-11-13","md":"11/13","w":"金","items":[{"s":"6:30","e":"8:30","p":"武蔵小金井駅南口","n":""},{"s":"17:00","e":"19:00","p":"ソコラ前（南口フェスティバルコート前）","n":""},{"s":"17:30","e":"20:00","p":"武蔵小金井駅南口","n":""}]},{"d":"2026-11-14","md":"11/14","w":"土","items":[{"s":"12:00","e":"13:00","p":"武蔵小金井駅北口","n":""},{"s":"14:30","e":"15:30","p":"ソコラ前（南口フェスティバルコート前）","n":""},{"s":"15:45","e":"17:00","p":"武蔵小金井駅南口","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅北口","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅南口","n":""}]}],sec=document.getElementById('gaito');if(!sec)return;
+var D=[{"d":"2026-11-09","md":"11/9","w":"月","items":[{"s":"6:30","e":"8:30","p":"東小金井駅南口","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅北口","n":""}]},{"d":"2026-11-10","md":"11/10","w":"火","items":[{"s":"6:30","e":"8:30","p":"東小金井駅北口","n":""},{"s":"18:00","e":"20:00","p":"武蔵小金井駅北口","n":""},{"s":"18:00","e":"20:00","p":"武蔵小金井駅南口","n":""}]},{"d":"2026-11-11","md":"11/11","w":"水","items":[{"s":"6:30","e":"8:30","p":"東小金井駅nonowa北","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅nonowa北","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅nonowa南","n":""}]},{"d":"2026-11-12","md":"11/12","w":"木","items":[{"s":"6:30","e":"8:30","p":"武蔵小金井駅北口","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅南口","n":""}]},{"d":"2026-11-13","md":"11/13","w":"金","items":[{"s":"6:30","e":"8:30","p":"武蔵小金井駅南口","n":""},{"s":"17:00","e":"19:00","p":"ソコラ前（南口フェスティバルコート前）","n":""},{"s":"17:30","e":"20:00","p":"武蔵小金井駅南口","n":""}]},{"d":"2026-11-14","md":"11/14","w":"土","items":[{"s":"12:00","e":"13:00","p":"武蔵小金井駅北口","n":""},{"s":"14:30","e":"15:30","p":"ソコラ前（南口フェスティバルコート前）","n":""},{"s":"15:45","e":"17:00","p":"武蔵小金井駅南口","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅北口","n":""},{"s":"18:00","e":"20:00","p":"東小金井駅南口","n":""}]}],sec=document.getElementById('gaito');if(!sec)return;
 var now=new Date(Date.now()+9*3600*1000),today=now.toISOString().slice(0,10);
 var up=D.filter(function(x){return x.d>=today});if(!up.length){sec.hidden=true;return}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
@@ -175,8 +177,11 @@ function day(x,lbl,cls){var h='<div class="gaito-day"><div class="gaito-date">'+
  esc(x.md)+'<span class="wd">'+esc(x.w)+'</span></div><ul class="gaito-list">';
  x.items.forEach(function(i){h+='<li><span class="tm">'+esc(i.s)+'〜'+esc(i.e)+'</span><span class="pl">'+esc(i.p)+(i.n?'<small>'+esc(i.n)+'</small>':'')+'</span></li>'});
  return h+'</ul></div>'}
-var first=up[0],h=day(first,first.d===today?'今日':'次の予定',first.d===today?'':'next'),rest=up.slice(1);
-if(rest.length){h+='<details class="gaito-more"><summary>'+(first.d===today?'明日以降':'その後')+'の予定（'+rest.length+'日分）を見る</summary>';
+/* 今日と明日を表示（2026-11-08 本人指示「今日と明日にしてくれる？」）。今日の予定が無ければ次の予定日から2日 */
+var tm=new Date(now.getTime()+86400000).toISOString().slice(0,10),h='';
+var shown=up.slice(0,2),rest=up.slice(2);
+shown.forEach(function(x,i){var l=x.d===today?'今日':x.d===tm?'明日':i===0?'次の予定':'';h+=day(x,l,l==='今日'?'':l==='明日'?'tmr':'next')});
+if(rest.length){h+='<details class="gaito-more"><summary>その後の予定（'+rest.length+'日分）を見る</summary>';
  rest.forEach(function(x){h+=day(x)});h+='</details>'}
 document.getElementById('gaito-body').innerHTML=h;sec.hidden=false})();</script>
 <!-- GAITO-END -->
