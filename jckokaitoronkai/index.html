@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/png" href="../uploads/supporterslogo.png">
+<title>小金井市長選挙 公開討論会 文字起こし(小金井青年会議所 2026-11-03)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@600;800&display=swap');
+:root{
+  --blue:#00AEEF; --blue-ink:#005a91; --blue-pale:#d3edfb; --blue-soft:#eaf7fe;
+  --magenta:#e4007f; --yellow:#fff100; --yellow-soft:#fffcd1;
+  --ink:#221815; --ink-soft:#5d5650; --ink-faint:#948d86; --line:#e7e2d6; --line-soft:#f0ece1;
+  --jp:'Noto Sans JP','Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,sans-serif;
+  --round:'Zen Kaku Gothic New','Noto Sans JP',sans-serif;
+  --en:'Outfit','Noto Sans JP',sans-serif;
+  --shadow:0 12px 34px rgba(20,40,70,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);font-family:var(--jp);line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:var(--blue-ink)}
+.band{background:radial-gradient(circle at 92% 0%,#bfe6fb 0,rgba(191,230,251,0) 38%),linear-gradient(180deg,var(--blue-soft) 0%,#fff 100%)}
+.band-in{max-width:1000px;margin:0 auto;padding:44px 20px 30px}
+.kicker{display:inline-flex;align-items:center;gap:8px;background:var(--blue-ink);color:#fff;font-family:var(--round);font-weight:700;font-size:13px;letter-spacing:.06em;padding:6px 14px;margin:0 0 18px}
+.kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--yellow)}
+h1{font-family:var(--round);font-weight:900;font-size:clamp(28px,5.4vw,50px);line-height:1.3;letter-spacing:.01em;margin:0 0 16px}
+h1 .mk{background:linear-gradient(transparent 58%,var(--yellow) 58%);padding:0 2px}
+.cast{font-size:14px;margin:0;color:var(--ink-soft)}
+.cast b{color:var(--ink);font-weight:700}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px 90px}
+.notice{background:var(--yellow-soft);border-left:5px solid var(--yellow);border-radius:0 12px 12px 0;padding:16px 20px;margin:26px 0;font-size:13.5px;color:var(--ink-soft)}
+.notice p{margin:0 0 6px} .notice p:last-child{margin:0}
+.notice .warn{color:var(--magenta);font-weight:700}
+.lab{font-family:var(--round);font-weight:900;font-size:22px;letter-spacing:.04em;color:var(--ink);margin:46px 0 16px;padding-top:14px;position:relative}
+.lab::before{content:"";position:absolute;left:0;top:0;width:44px;height:4px;background:var(--magenta);border-radius:2px}
+.ytbtn{display:inline-flex;align-items:center;gap:10px;background:var(--yellow);color:var(--ink);text-decoration:none;font-family:var(--round);font-weight:900;padding:14px 26px;border-radius:999px;font-size:16px;box-shadow:0 6px 18px rgba(224,212,0,.45);transition:transform .2s}
+.ytbtn svg{width:14px;height:14px;fill:var(--magenta)}
+.ytbtn:hover{transform:translateY(-2px)}
+.cap{font-size:12.5px;color:var(--ink-faint);margin:10px 0 0}
+.toc{list-style:none;counter-reset:t;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;padding:0;margin:0}
+.toc li{counter-increment:t;margin:0}
+.toc a{display:flex;gap:10px;align-items:center;border:1.5px solid var(--blue-ink);padding:11px 14px;text-decoration:none;color:var(--blue-ink);font-family:var(--round);font-weight:700;font-size:14.5px;line-height:1.5;height:100%}
+.toc a::before{content:counter(t);font-family:var(--en);font-weight:800;color:var(--magenta);min-width:1.2em}
+.toc a:hover{background:var(--blue-soft)}
+.method{font-size:12.5px;color:var(--ink-faint);margin:10px 0 0}
+.cmp{background:#fff;border-top:5px solid var(--blue-ink);box-shadow:var(--shadow);padding:22px 24px;margin:0 0 22px}
+.cmp h3{font-family:var(--round);font-weight:900;font-size:20px;margin:0 0 12px;display:flex;gap:12px;align-items:baseline;line-height:1.45}
+.no{font-family:var(--en);font-weight:800;font-size:26px;color:var(--magenta);line-height:1;min-width:1.3em}
+.q{font-size:14px;color:var(--ink);margin:0 0 14px;background:var(--blue-soft);padding:10px 14px;border-radius:8px}
+.qlab{font-family:var(--round);font-size:12px;font-weight:900;color:var(--blue-ink);margin-right:8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cell{border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:0 0 12px 12px;background:#fff;padding:12px 14px}
+.who{font-family:var(--round);font-weight:900;color:var(--ink);margin:0 0 6px;font-size:16px}
+.cell ul{margin:0;padding-left:1.15em;font-size:14px;line-height:1.7}
+.cell li{margin:4px 0} .cell li::marker{color:var(--blue)}
+.none{font-size:13px;color:var(--ink-faint);margin:0}
+.jump{margin:10px 0 0;font-size:12.5px} .jump a:not(.ts){color:var(--ink-faint)}
+h2.topic{font-family:var(--round);font-weight:900;font-size:24px;line-height:1.4;margin:56px 0 8px;padding:0 0 12px;border-bottom:4px solid var(--blue-ink);display:flex;gap:12px;align-items:baseline}
+h2.topic .no{font-size:30px}
+.turn{padding:14px 0;border-bottom:1px solid var(--line-soft)}
+.meta{display:flex;gap:8px;align-items:baseline;margin-bottom:4px}
+.name{font-family:var(--round);font-weight:900;color:var(--blue-ink);font-size:16.5px}
+.role{font-size:11.5px;color:#fff;background:var(--ink-faint);padding:1px 8px;border-radius:999px}
+.turn.mod .name,.turn.other .name{color:var(--ink-soft);font-weight:700}
+.turn.mod .say,.turn.other .say{color:var(--ink-soft)}
+.say{margin:0 0 6px;font-size:16px}
+.ts{display:inline-flex;align-items:center;gap:3px;font-family:var(--en);font-size:12px;font-weight:600;color:#fff;background:var(--blue-ink);text-decoration:none;margin-right:8px;padding:1px 8px 1px 6px;border-radius:999px;white-space:nowrap;vertical-align:2px}
+.ts svg{width:8px;height:8px;fill:var(--yellow)}
+.ts:hover{background:var(--magenta)}
+.turn:target{background:var(--yellow-soft)}
+.foot{margin-top:46px;font-size:12.5px;color:var(--ink-faint);border-top:1px solid var(--line);padding-top:16px}
+.totop{position:fixed;right:16px;bottom:16px;width:46px;height:46px;border-radius:50%;background:var(--yellow);color:var(--ink);border:0;font-size:18px;font-weight:900;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+@media(max-width:760px){.grid{grid-template-columns:1fr} .say{font-size:15.5px} .band-in{padding:30px 16px 22px} .wrap{padding:0 16px 90px} .cmp{padding:18px 16px} h2.topic{font-size:20px}}
+.ack{background:#fff;border:2px solid var(--blue-ink);border-radius:12px;padding:20px 24px;margin:28px 0 0;box-shadow:var(--shadow)}.ack p{margin:0;font-family:var(--round);font-weight:700;font-size:18px;line-height:1.9;color:var(--ink)}@media(max-width:760px){.ack{padding:16px 18px}.ack p{font-size:16.5px}}</style>
+</head>
+<body>
+<header class="band"><div class="band-in">
+  <p class="kicker">文字起こし(非公式)</p>
+  <h1>小金井市長選挙<br>立候補予定者による<span class="mk">公開討論会</span></h1>
+  <p class="cast">2026年11月3日 宮地楽器ホール 大ホール ／ 主催 小金井青年会議所 ／ 登壇(五十音順) <b>後藤秀典</b>・<b>白井とおる</b>・<b>田中真一</b></p>
+</div></header>
+<main class="wrap">
+  <div class="ack"><p>この文字起こしは、小金井青年会議所様のご承諾をいただき、掲載するものです。最新の技術を使用し、小金井市政独自の用語なども反映して、精度を高く、文字起こしを行っておりますが、万が一誤りなどありましたら、白井とおるサポーターズまでお知らせください。</p></div>
+  <div class="notice">
+    <p>この文字起こしは、配信動画の音声から自動の音声認識(OpenAI Whisper)と話者の自動分離で作り、AI(OpenAI GPT)で誤変換を直したものです。話者の切れ目は人の判断で直しました。<span class="warn">話者や語句の誤りを含みます。発言を引くときは、必ず各段落の時刻リンクから動画で確かめてください。</span></p>
+    <p>主催者の説明では、公開された動画は開会前の会場案内や主催者あいさつ等を一部省略しており、立候補予定者の発言部分は省略・抜粋していないとのことです。コーディネーター・司会の名前は、主催者のページで確かめられなかったため役名で示しています。</p>
+    <p>原典: <a href="https://www.youtube.com/watch?v=sknkQ7irnDA" target="_blank" rel="noopener">小金井市長選挙立候補予定者による公開討論会(令和8年)(小金井青年会議所・YouTube)</a> ／ <a href="https://koganeijc.com/2026shichosen-koganei-questionnaire/" target="_blank" rel="noopener">立候補予定者の事前アンケート(小金井青年会議所)</a></p>
+  </div>
+
+  <p class="lab">動画</p>
+  <a class="ytbtn" href="https://www.youtube.com/watch?v=sknkQ7irnDA" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="8,5 19,12 8,19"/></svg>YouTubeで動画を開く(約1時間21分)</a>
+  <p class="cap">本文と比較の時刻(▸)は、YouTube版の時刻です。押すとその場面から再生されます。</p>
+
+  <p class="lab">論点ごとの比較</p>
+  <ol class="toc"><li><a href="#cmp1">自己紹介と小金井市の現状・将来像</a></li><li><a href="#cmp2">新庁舎・新福祉会館の整備</a></li><li><a href="#cmp3">クロストーク:新庁舎(設計・170億円・延期)</a></li><li><a href="#cmp4">都市計画道路(3・4・11号線、3・4・12号線)</a></li><li><a href="#cmp5">クロストーク:公約の実現と、都道の中止要請</a></li><li><a href="#cmp6">人口構造の変化と定住</a></li><li><a href="#cmp7">クロストーク:待機児童と公立保育園</a></li><li><a href="#cmp8">コーディネーターの質問:若い世代の経済的な機会</a></li><li><a href="#cmp9">最後の主張</a></li></ol>
+  <p class="method">要約は本文(文字起こし)にある発言だけから作りました(作成 Claude)。3人とも同じ形にし、評価の言葉は入れていません。白井さんは質問を受けた回数が多いため項目がやや多くなっています。数字・金額は発言どおりで、事実かどうかは確かめていません。時刻リンクはその発言の始まりです。</p>
+  <div style="height:14px"></div>
+  <section class="cmp" id="cmp1"><h3><span class="no">1</span>自己紹介と小金井市の現状・将来像</h3>
+<p class="q"><span class="qlab">コーディネーターの問い</span>自己紹介と、小金井市の現状をどう認識し、どんな将来像を目指すか(1人4分)。 <a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=184s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>3:04</a></p>
+<div class="grid">
+<div class="cell"><p class="who">後藤秀典</p>
+<ul><li>東町に住んで33年。子育ての地域のネットワークと、野川公園・武蔵野公園の緑が住み続けた理由と述べた。</li><li>35年間ジャーナリストとして貧困・社会保障を取材し、市役所と対立してきた経験から、7人の市議に誘われて立候補を決めたと説明した。</li><li>地域で困りごとを抱えた人につながり、市役所が解決する「市民の生活を守る砦」にしたいと述べた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=511s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>8:31</a><a href="#topic1">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">白井とおる</p>
+<ul><li>市議だった4年前、前市長の辞職を受けて立候補し、4年間市長を務めたと述べた。</li><li>子育てしやすい自治体ランキングで首都圏10位となった一方、人口減少や公共施設の一斉更新など課題が山積していると述べた。</li><li>ビジョンとして「みんなでつくるまち」(市民参画・市民協働、孤立の防止)と「チャレンジを応援するまち」を挙げた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=756s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>12:36</a><a href="#topic1">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">田中真一</p>
+<ul><li>北上青年会議所の出身で、日本青年会議所で公開討論会を担当したと紹介した。</li><li>神戸製鋼でラグビー、慶応の監督、武見敬三参議院議員の秘書などを経て、市長選に誘われたと経歴を述べた。</li><li>小金井は中央線が通り、北に小金井公園・玉川上水、南に野川・武蔵野公園がある水と緑の豊かなまちで、これを前に進めたいと述べた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=270s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>4:30</a><a href="#topic1">本文へ</a></p>
+</div>
+</div></section>
+<section class="cmp" id="cmp2"><h3><span class="no">2</span>新庁舎・新福祉会館の整備</h3>
+<p class="q"><span class="qlab">コーディネーターの問い</span>工事費の見込みが増え、市は2026年9月に従来の方針を見直す考えを示した。今後どう進めるか、市財政への影響を含め展望と施策を(1人3分)。 <a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=996s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>16:36</a></p>
+<div class="grid">
+<div class="cell"><p class="who">後藤秀典</p>
+<ul><li>防災対策の拠点として本庁舎は早く建て直すべきだが、耐震などに課題のある小中学校の建て替えと同時に進める必要があると述べた。</li><li>学校の建て替え費用を全部計算し、新庁舎にかけられる額を市民に明らかにしたうえで、その範囲でコンパクトで使いやすい庁舎を建てると述べた。</li><li>市民案にある、一部を先に建て替える段階的な整備のような柔軟な考え方も挙げた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1046s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>17:26</a><a href="#topic2">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">白井とおる</p>
+<ul><li>約130億円の工事予算は議会で可決されたが入札が2度中止となり、事業者への聞き取りで240億円相当が見込まれたため、設計の見直しを決めたと説明した。</li><li>170億円を建設費の上限の目安、2030年着工・2033年竣工を時期の目安として、規模・機能・整備手法の見直しに着手していると述べた。</li><li>3月末までに整備の方針を示し、小中学校の建て替えと並行して進めると述べた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1234s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>20:34</a><a href="#topic2">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">田中真一</p>
+<ul><li>阪神・淡路大震災で被災した経験から、災害時に市役所が機能しなくなることはあってはならず、庁舎の再建を何よりも早く進めると述べた。</li><li>財源については、11月に設置された防災庁の防災力強化総合交付金など、国や都の交付金を得られる体制をつくると述べた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1397s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>23:17</a><a href="#topic2">本文へ</a></p>
+</div>
+</div></section>
+<section class="cmp" id="cmp3"><h3><span class="no">3</span>クロストーク:新庁舎(設計・170億円・延期)</h3>
+<p class="q"><span class="qlab">コーディネーターの問い</span>候補者どうしの質疑と、コーディネーターから田中さんへの質問(どこまで費用をかけ、いつまでに建てるか)。 <a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1571s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>26:11</a></p>
+<div class="grid">
+<div class="cell"><p class="who">後藤秀典</p>
+<ul><li>白井さんに、もとの設計(L字型、免震と耐震の混在)に問題はなかったか、170億円で市の借金が財政規律の限度を超えないかと質問した。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1595s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>26:35</a><a href="#topic3">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">白井とおる</p>
+<ul><li>後藤さんに、設計そのものに問題はなかったが、やり直しではコストを抑える設計を前提にすると答えた。</li><li>田中さんに、延期ではなく、今の設計では財政調整基金が枯渇するため、170億円の枠で早期に設計をやり直すと答えた。</li><li>後藤さんの「耐震を満たさない学校が多い」との発言に、耐震は満たしており、課題はコンクリート強度で追加調査が必要だと補足した。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1662s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>27:42</a><a href="#topic3">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">田中真一</p>
+<ul><li>白井さんに、旧耐震で60年たつ建物の危険を認識しながら、なぜ再建を延期する判断をしたのかと質問した。</li><li>コーディネーターの問いに、かけられる額は財政当局と相談して決めることで、福祉会館と分離して庁舎を先に建てることも考えると答えた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1781s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>29:41</a><a href="#topic3">本文へ</a></p>
+</div>
+</div></section>
+<section class="cmp" id="cmp4"><h3><span class="no">4</span>都市計画道路(3・4・11号線、3・4・12号線)</h3>
+<p class="q"><span class="qlab">コーディネーターの問い</span>2026年3月の東京都の整備方針で、3・4・11号線(都施工)と3・4・12号線(市施工)が優先整備路線とされた。市長としてどう関わるか、展望と施策を(1人3分)。 <a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2149s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>35:49</a></p>
+<div class="grid">
+<div class="cell"><p class="who">後藤秀典</p>
+<ul><li>3・4・11号線の建設に反対し、市民とともに東京都に中止を強く申し入れると述べた。武蔵野公園の生態系と、南北に大きな公園があるという小金井の魅力を守るためと説明した。</li><li>救急の課題は病院が決まるまでの時間(都内平均22分)で、三次救急の体制を早く立て直すことや、西武多摩川線の遊歩道を大型消防車が通れるようにすることを優先すべきだと述べた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2494s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>41:34</a><a href="#topic4">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">白井とおる</p>
+<ul><li>3・4・11号線は、市独自の検証を踏まえ、道路整備の必要性は否めないと判断した。4年前の公約とは異なる判断だと述べ、謝罪した。</li><li>東京都の概略設計(橋梁案)で施工方法が明らかになった段階で、自然環境への影響をできる限り減らすよう都に意見を伝えると述べた。</li><li>3・4・12号線は、事業化はまだ先で、市内の道路整備の終了後に着手し、住民に丁寧に説明して進めると述べた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2206s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>36:46</a><a href="#topic4">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">田中真一</p>
+<ul><li>3・4・11号線は、渋滞する南北の道を補い、災害時の避難路となる「命を守る道路」として必要で、野川の自然に最大限配慮して整備すると述べた。</li><li>3・4・12号線は計画段階で、住民への丁寧な説明と合意形成が前提。3・4・11号線は府中市長からも早く決めてほしいと言われていると述べた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2379s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>39:39</a><a href="#topic4">本文へ</a></p>
+</div>
+</div></section>
+<section class="cmp" id="cmp5"><h3><span class="no">5</span>クロストーク:公約の実現と、都道の中止要請</h3>
+<p class="q"><span class="qlab">コーディネーターの問い</span>候補者どうしの質疑と、コーディネーターから後藤さんへの質問(中止を求めても東京都が建設を決めたらどうするか)。 <a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2679s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>44:39</a></p>
+<div class="grid">
+<div class="cell"><p class="who">後藤秀典</p>
+<ul><li>白井さんに、4年前の公約(3・4・11号線の中止、公立保育園5園の存続、新庁舎)が実現していないのはなぜかと質問した。</li><li>コーディネーターの問いに、多数の市民の要望を背負って都に中止を強く求め、それでも強行されれば、住民とともに座り込みも含めて許さない立場で戦うと答えた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2698s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>44:58</a><a href="#topic5">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">白井とおる</p>
+<ul><li>3・4・11号線は、中止を求める根拠を得るため市独自に検証し、南北3.6キロに幹線道路がない状態では市民の安全を守れないと判断したと答えた。</li><li>公立保育園は廃園を戻す条例を提案したが議会で認められず、役割の議論と答申を経て新しい方針と条例で整理した。新庁舎も諦めたわけではないと答えた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2744s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>45:44</a><a href="#topic5">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">田中真一</p>
+<p class="none">この論点での発言は、文字起こしからは見当たりませんでした。</p>
+</div>
+</div></section>
+<section class="cmp" id="cmp6"><h3><span class="no">6</span>人口構造の変化と定住</h3>
+<p class="q"><span class="qlab">コーディネーターの問い</span>生産年齢人口の減少と高齢化が見込まれる中、若い世代や子育て世代が住み続けられるまちづくりを、財源の確保を含めて(1人3分)。 <a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3007s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>50:07</a></p>
+<div class="grid">
+<div class="cell"><p class="who">後藤秀典</p>
+<ul><li>市の財政は住民の市民税で成り立っており、福祉・社会保障を充実させて今住む人が住み続けられるようにすることが市の経営にとって最も大事だと述べた。</li><li>小金井の魅力は南北の大きな公園で、公立保育園の廃止や都道の建設は、人が移り住み暮らし続けることに反すると述べた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3231s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>53:51</a><a href="#topic6">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">白井とおる</p>
+<ul><li>人口構造の変化をなだらかにするため、子育て世代と20〜30代の定着が重要課題だと述べた。</li><li>妊娠から子育てまでの切れ目ない支援、保育園・学童保育の量と質の確保、地域ぐるみの子育てを進めると述べた。</li><li>転入・転出の多い20〜30代に、まちと関わる仕掛けをつくって定着や関係人口化を図ると述べた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3390s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>56:30</a><a href="#topic6">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">田中真一</p>
+<ul><li>小金井は多摩26市で平均年齢が最も若い一方、法人市民税が税収の2.7%と近隣より低く、法人を育てることが定住に大事だと述べた。</li><li>農工大のベンチャーポートで育った企業が市内に移る場所がない例を挙げ、新しい産業の受け皿を産官学で用意すると述べた。</li><li>健康寿命が26市で上位のため、元気な高齢者が活躍できる場をつくると述べた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3051s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>50:51</a><a href="#topic6">本文へ</a></p>
+</div>
+</div></section>
+<section class="cmp" id="cmp7"><h3><span class="no">7</span>クロストーク:待機児童と公立保育園</h3>
+<p class="q"><span class="qlab">コーディネーターの問い</span>候補者どうしの質疑と補足。 <a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3569s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>59:29</a></p>
+<div class="grid">
+<div class="cell"><p class="who">後藤秀典</p>
+<ul><li>白井さんに、隠れ待機児童が100人以上いるのに保育園を2園廃園にし、都道も建設することは、人が入り暮らし続けることに逆行しないかと質問した。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3583s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>59:43</a><a href="#topic7">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">白井とおる</p>
+<ul><li>隠れ待機児童の定義は明確でなく、100人は4月入所の一次審査で不承諾だった人数で、その後ほかの保育を見つけた人も含むため分析が必要だと答えた。</li><li>廃園は公立の保育士の配置で市全体の保育の質を高める仕組みづくりの話で、定員は民間を含めて確保に取り組むと答えた。</li><li>補足として、若者気候市民会議など、若い人の声を市政に反映する仕組みに着手したと述べた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3643s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:00:43</a><a href="#topic7">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">田中真一</p>
+<p class="none">この論点での発言は、文字起こしからは見当たりませんでした。</p>
+</div>
+</div></section>
+<section class="cmp" id="cmp8"><h3><span class="no">8</span>コーディネーターの質問:若い世代の経済的な機会</h3>
+<p class="q"><span class="qlab">コーディネーターの問い</span>若い世代はお金がなく機会も少ない。若者会議やコミュニティづくりが本当に求められているのか。経済的な機会をどう与えるか。 <a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3809s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:03:29</a></p>
+<div class="grid">
+<div class="cell"><p class="who">後藤秀典</p>
+<p class="none">この論点での発言は、文字起こしからは見当たりませんでした。</p>
+</div>
+<div class="cell"><p class="who">白井とおる</p>
+<ul><li>若い人みんなが反応するわけではないが、働きかけなければ反応はなく、やってみると反応があったと答えた。</li><li>小さいころから新しいことに挑戦するのを応援する機運をまちに埋め込み、主体的な若者を育てることが小金井のブランドにつながると答えた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3936s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:05:36</a><a href="#topic8">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">田中真一</p>
+<ul><li>スタートアップは場所と資金の調達に悩んでおり、多摩信用金庫など地元の金融機関と一緒に地元企業を育てる橋渡しをすると答えた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4065s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:07:45</a><a href="#topic8">本文へ</a></p>
+</div>
+</div></section>
+<section class="cmp" id="cmp9"><h3><span class="no">9</span>最後の主張</h3>
+<p class="q"><span class="qlab">コーディネーターの問い</span>一人ずつ、最後のメッセージ。 <a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4117s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:08:37</a></p>
+<div class="grid">
+<div class="cell"><p class="who">後藤秀典</p>
+<ul><li>物価高から暮らしを守るサポート、公立保育園の維持・復活、3・4・11号線の中止、財政を公開したコンパクトな庁舎の4つを掲げ、うち3つは白井さんの4年前の政策と同じだと述べた。</li><li>完全無所属で、党派を超えた7人の市議と実行できる政策を考え、少数与党でも市民の理解と協力を担保に市政を進めたい、選挙後も一緒に関わってほしいと訴えた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4141s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:09:01</a><a href="#topic9">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">白井とおる</p>
+<ul><li>4年間、うまくいかなかったこともあったが、悩みながら答えを出してきたと振り返り、庁舎・公立保育園・都市計画道路についての結論を述べた。</li><li>厳しくなる時代には事業の取捨選択も必要だが、市民・企業・団体の力を結集し、魅力あるまちとして発展させたい。挑戦し続けると述べた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4382s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:13:02</a><a href="#topic9">本文へ</a></p>
+</div>
+<div class="cell"><p class="who">田中真一</p>
+<ul><li>ふるさと納税は入る額が986万円、出ていく額が9億9千万円で、選ばれるメニューを市民と考えて是正すると述べた。</li><li>政治は結果責任で、決算が否決され続ける状態は正常ではないとし、議会との丁寧な合意形成で市政を前に進めると述べた。</li></ul>
+<p class="jump"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4627s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:17:07</a><a href="#topic9">本文へ</a></p>
+</div>
+</div></section>
+
+  <p class="lab">本文(全文)</p>
+  <div class="turn other" id="t0"><div class="meta"><span class="name">司会</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=0s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>0:00</a>続きまして、本日の公開討論会にご参加いただく立候補予定者の皆様にご入場いただきます。なお、席順につきましては、事前に控室にて抽選により決定しております。それでは皆様、盛大な拍手でお迎えください。はじめに田中真一様、ご入場ください。続きまして、後藤秀典様、ご入場ください。最後に、白井とおる様、ご入場ください。続きまして、本日の公開討論会のコーディネーターをお務めいただきます、公益社団法人日本青年会議所関東地区東京ブロック協議会第50代、第51代会長を務められました、おみのよしかず様、並びにアシスタントを務めます小金井青年会議所、しむらたかよし君、ご入場いただきます。皆様、拍手でお迎えください。それではここからの進行は、コーディネーターのおみの様にお願いいたします。おみの様、よろしくお願いいたします。</p>
+</div>
+<div class="turn mod" id="t1"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=90s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:30</a>はい、それでは代わりました、コーディネーターのおみのと申します。まず簡単に、今ご紹介いただいたんですけれども、私は東京ブロックの歴代会長でもございまして、そちらで務めておりました。青年会議所は40歳までなんですけれども、そのOBとなってございます。また、住まいは東久留米市に住んでおりますので、だいぶ近いんじゃないのかなというふうに思いますし、今日はコーディネーターとして、候補者の皆様と議論を深めていきたいなというふうに思っております。よろしくお願いします。それから本日の進行についてご説明させていただきたいというふうに思います。本日は、立候補予定者の皆様から、はじめに自己紹介と小金井市の現状認識及び将来像についてお話しいただいた後、新庁舎・新福祉会館の整備について、そして都市計画道路について、人口構造の変化と定住について、3つのテーマについて語っていただきます。なお、この3つのテーマにつきましては、立候補予定者の皆様に事前に質問でご回答いただいており、小金井青年会議所のホームページにて公開しております。小金井青年会議所と検索していただいて、そこのホームページを見ると、どのような事前回答をしているかというのが見えますので、ぜひそれを見ながら聞くと、より入ってくるんじゃないのかなというふうに思います。立候補予定者の皆様の発言順序、こちらは先ほど控室の方でくじを引いて、こちらでA、B、Cという形で順番に質問をしていきます。次はB、C、Aという形で順番に進めさせていただきます。</p>
+</div>
+<h2 class="topic" id="topic1"><span class="no">1</span>自己紹介と小金井市の現状・将来像</h2>
+<div class="turn mod" id="t2"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=184s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>3:04</a>発言に関しては、公平を期するため時間の計測を行っております。そして各テーマは、はじめに私からテーマの趣旨をご説明した上で、お一人様3分ずつご主張いただきます。その後、クロストークの時間を設けます。クロストークは、立候補予定者の皆様が他の立候補予定者に質問していただき、質問を受けた方がお答えいただくということになっております。ご質問を希望される方は挙手をしてもらって、私の指名により1分以内に質問をしていただき、質問を受けた方は2分以内にお答えいただければと思います。各テーマで3回程度予定しておりますので、公平を期すために、まずは一番大事な時間というところがございますので、それは平等に割り振れるように私の方でうまく調整はしたいなというふうに思っております。そして最後に、私の方からも、市民の皆様、きっと聞きたいであろうことを少し質問させていただくこともございます。そちらに関しても、お答えいただきたいなというふうに思っております。まずは、立候補予定者の皆様から簡単な自己紹介をいただきたいというふうに思います。続いて、小金井市の現状をどのように認識しておられるか、その上で目指す将来像についてお話をいただきたいというふうに思ってます。こちらの発言時間はお一人4分です。自己紹介を1分程度、現状認識3分というふうにあるんですが、こちらを4分の中で収めていただければ問題ないかなというふうに思っております。それでは、まずは田中様からお願いいたします。</p>
+</div>
+<div class="turn cand" id="t3"><div class="meta"><span class="name">田中真一</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=270s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>4:30</a>皆さん、どうもこんばんは。ただいまご紹介いただきました田中真一でございます。このたびは小金井青年会議所の皆様がこのような機会をいただきまして、誠にありがとうございました。実は私、岩手県の北上青年会議所の出身でございまして、北上JC時代に、実は日本青年会議所に出向して、公開討論会を担当する委員会に出向いたしました。2003年ですね、サマコンでメインフォーラムで公開討論会の進めをして、その年に行われた衆議院選挙、300選挙区で公開討論会を全部やろうという形で挑戦したんですけども、確か280ぐらいはできたんですけども。ただ、本当にやっぱりこれこそ青年会議所が取り組む事業だという形で、今日もお招きをいただきまして誠にありがとうございました。北上青年会議所って、実はこの小金井の街ともはかならぬご縁がありまして、北上の地というのは、実は小金井桜を運んでいただいてですね、小金井桜で、実は桜ができて、非常に毎年ちょうどゴールデンウィークのちょっと前ぐらいに桜満開になるんですけども、大変大きなにぎわいをいただいております。本当にそういった意味でも、小金井の皆様との桜からのご縁を感じております。その中で私の自己紹介でございますが、正直、いろんなことをやってきました。小さい頃からラグビーをやっておりましたので、慶応大学を卒業した後、神戸製鋼という会社に入りまして、亡くなりました平尾さん、今年10年経ちますけど、平尾キャプテンのもと、ラグビーをさせていただいて、</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=362s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>6:02</a>神戸製鋼でも2連覇から6連覇まで所属をさせていただきました。その後、実は父が急逝したもので、父の会社、家族の同族会社でありました伊藤平光さんという会社に、それが実は岩手県の北上でございまして、北上青年会議所に参りました。残念ながらその会社はクローズをさせていただきまして、実は大学時代から政治家になりたいという思いがありましたので、これまた慶応大学のラグビー部の先輩である武見敬三の門をたたいて、武見敬三の秘書をやりました。武見は落選しました。落選すると秘書も失職します。そうしたところ、慶応高校のラグビー部から監督をやってくれと頼まれまして、高校の監督を3年、その後大学の監督を2年させていただいて、そして実は岩手県で参議院選挙に出馬せんかというようなお誘いをいただいて、参議院選挙に挑戦しました。その後また武見敬三の秘書に戻って、等々あってですね、昨年の7月、参議院選挙で私の勤めていた武見敬三が落選をした関係で、さあこれから人生どうするのというところに、今回このように市長選挙に立候補してみないかというお誘いをいただきまして、そして今回挑戦させていただく運びになりました。本当にいろんなことをさせていただいた人生ですが、本当に私がこの場にいるのは、特に私のことをすごく買っていただいたのは、ラグビーの監督や、ラグビーをプレーしていたってことで、やっぱり決断力、判断力があるだろうと。やはりこの小金井市政を前に進めるために、しっかりと判断をして前に進める、その力を君に期待するんだってことを言われました。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=454s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>7:34</a>その中で、今回小金井をどう思っているか。非常にいい街ですね。そう思いました。南北4キロ、東西4キロのこのコンパクトな街の中に、街の中央に中央線が走っていて、街の北側には小金井公園があり、そして玉川上水があって、南側には野川が流れて、そして武蔵野公園、野川公園とあってですね、本当に水と緑の豊かなところだと思っております。その中で、やっぱり学校がたくさんあってですね。もう30秒。4分経っちゃうってことですか。早いな。なるほど、なるほど。ありがとうございます。ということでですね、今回この小金井の街で私は挑戦させていただきたいと思います。本当に風光明媚なこの素晴らしい小金井の街を前に進めていくように努めてまいりたいと思います。以上です。</p>
+</div>
+<div class="turn mod" id="t4"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=504s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>8:24</a>はい、ありがとうございます。続きまして、後藤さん、お願いいたします。</p>
+</div>
+<div class="turn cand" id="t5"><div class="meta"><span class="name">後藤秀典</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=511s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>8:31</a>はい。皆さん、こんばんは。後藤秀典と申します。結婚を機にこの小金井に来まして、東町に引っ越してきて33年になります。なんでこんなに長くこの小金井に住み続けたかっていうと、一つはやっぱり子育て環境がとても良かった。保育園だとか学童だとか小学校、中学校と、ずっとこの子育てに関わってきた。この子育ての地域のネットワーク、これが非常に良かったなというふうに思って、ここで暮らしてきました。と言いつつね、私、ジャーナリストという仕事柄、年の半分はうちにいなかったんです。だから地域活動、その頃は全然できてなかったんですけど、成人式の時、息子が言ったんですね。俺は親に育てられたわけじゃないと、地域に育てられたんだと。こう言うととても無責任なような気もするんですけど、それくらいこの小金井の子育て環境が良かったというふうに思います。それからもう一つは、このやっぱり緑ですね。家から歩いてすぐのところに野川公園、そして武蔵野公園がある。子供がよちよち歩きの頃からそこで遊んでいた。それがやっぱり一番。この二つですね。これが小金井に住み続けてきた理由ということになります。私、35年間ジャーナリストをやってきました。前半の50歳ぐらいまでは、ずっとテレビの報道番組を作ってたんです。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=604s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>10:04</a>TBSの報道特集とか、それからあとNHKのクローズアップ現代とか、結構そういう固めの番組で、特に貧困問題、それから生活保障の問題、それから社会保障の問題、生活困窮の問題、そういうのを取材してきました。例えば生活保護を申請しに行ったんだけど、最後の頼みの生活保護を申請しに行ったんだけど、窓口で断られてしまったと。とうとうその男性は餓死してしまった。そんな取材もしました。これは多分、テレビで報道したのが私が初めてだったと思います。そういうときに、そういう取材をずっとしてて、当然追求するのは国なんです。国の社会保障政策、これがまずいって追求するんです。しかし直接のサービスの窓口は全部市役所だったんです。で、その市役所と散々喧嘩をしてきました。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=666s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>11:06</a>で、ときには市役所から抗議の手紙ももらいましたし、それから十数枚の内容証明ももらったことがあります。でもその内容を見て、絶対私は負けてないというふうに思いましたけれども。そういう経験を積んできて、今回7人の市議会議員さんに、市長になってみないかって言われたんですね。で、そのときどう思ったか。これまで私はずっとカウンターのこっち側から弱者の目線で行政を取材してきた。今度、向こう側に行ったらどういう取材ができるだろうか。私のその弱者の目線ってのを生かして取材ができるんじゃないかなと。そういうふうに思って市長選に挑戦することにしました。で、DVだとか、多重債務だとか、あと一人親の貧困だとか、どうしようもない、そういう貧困状態に陥ること、数あると思います。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=727s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>12:07</a>そういうとき、やっぱり地域コミュニティが皆さん問題につながる。そしてその問題を持った人につながる。で、その問題がすぐ市役所に共有されると。で、それを、必ず市役所に相談にくれば解決していく。そういう、市役所を市民の生活を守る、そういう砦にしたい。そういうふうに思ってます。ありがとうございます。</p>
+</div>
+<div class="turn mod" id="t6"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=752s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>12:32</a>はい、ありがとうございます。続きまして白井さん、お願いいたします。</p>
+</div>
+<div class="turn cand" id="t7"><div class="meta"><span class="name">白井とおる</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=756s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>12:36</a>はい、皆さんこんばんは。現職の小金井市長の白井とおるでございます。今日はこういう素晴らしい機会をいただきまして、JCの皆さん、本当にありがとうございます。東町在住、小金井市に住んで19年と5か月になります。子供は中学生と高校生の2人ですね。毎朝、朝ごはんと、そして長男の弁当作りが私の家事の担当でございます。市議会議員を務めておりました4年前に、前市長の突然の辞職となり、私はそれまで市議会議員として、時には厳しく行政を正す、こういう関わってきた責任、これを感じて自ら手を挙げ、そしてこの4年間、市長を務めさせていただきました。ここはビジョンを語る場でございますので、まず現状認識ですね。小金井市は都心から近くですね、南北に大きな公園に挟まれ、緑豊か、そして教育機関も多く、文教都市として豊かな住環境を築いてきました。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=821s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>13:41</a>東洋経済オンラインの子育てしやすい自治体ランキング、これの最新版、これではですね、小金井市はなんと首都圏で第10位へランクインをしております。子育て世代から選ばれる町となってきたわけです。しかしながら、今後人口減少を迎える中ですね、行政経営の環境は非常に厳しいものがございます。高齢化への対応もそうですが、何より公共施設の一斉更新を迎える時期となっています。また、様々な市民サービスへの対応、そして今、地域の担い手が不足している問題、労働力の不足、本当に様々な課題が山積している状況でございます。しかしながらですね、私、市長4年やってまいりましたが、改めて、本当に小金井市の市民力の高さに感動しております。市民の皆さんの市民力の高さをもって、もっともっとですね、魅力のある町にできると私は考えています。ビジョンとしては、みんなでつくる町、そして動き彩る町、こういったことを掲げています。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=887s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>14:47</a>みんなでつくる町というのは、当然、多様な声を反映する市民参画、そしてもう一つは市民協働を進めていかないといけないということです。これ言い換えますとですね、市が様々な地域の団体やNPO、こういうところと役割分担をして、そしていいところをしっかり補い合って、物事を進めていくということ、これを活性化していくという必要があります。市民協働支援センターを設置することをはじめとして、市民協働を推進していくこと、そのためにはですね、市民の皆さんに、多様な市民がこの町の中でどんどん動くということが、私は非常に重要だと思っています。動くっていうことは、すなわち動くわけですから、健康にもなりますよね。そして市民の皆さんが地域の中で動くことによって、出会いが生まれる、そして交流が生まれ、またつながりが生まれる。これをもっとですね、多様な交流をもとにして地域の活性化につなげていく。これ、私は非常に重要だと思っています。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=949s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>15:49</a>そしてもう一つは、この高齢化も今後進んでいく中において、最も避けないといけないことは、孤立化とか孤独化なんですね。それを防止するためにも、市民の皆さんでつながりをつくって、共に助け合い、支え合う、そういう共につくる町、これを私はビジョンとして描いているところでございます。そしてもう一つは、チャレンジを応援する町ですね。東小金井を中心に、創業支援の環境があります。それを進化させて、創業支援だけではなくて、例えば子どもも若者もご高齢の方も、新しいことに一歩踏み出す、何かチャレンジをする。それをみんなで応援することにすれば、面白いことがもっと生まれ、若い人たちにももっと選ばれる町になっていく、そういうビジョンを描いております。以上です。</p>
+</div>
+<h2 class="topic" id="topic2"><span class="no">2</span>新庁舎・新福祉会館の整備</h2>
+<div class="turn mod" id="t8"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=996s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>16:36</a>はい、ありがとうございます。それでは皆様にはですね、先ほど現状認識と将来像をお答えいただきました。これはあくまで、クロストークはこの後行いますので、この後はですね、今回、討論会という形でテーマに沿ってお話をいただきたいというふうに思います。それでは、まずはテーマ1としまして、新庁舎、新福祉会館の整備について語っていただきます。新庁舎及び新福祉会館の整備事業は、工事費の見込みが増加し、市は2026年9月に従来の方針を見直す考えを示しています。本事業、今後どのように進めていくお考えか。市財政への影響を含め、展望と施策をお聞かせください。こちら先ほどですね、田中様からいただいたので、次はですね、後藤様からお願いしたいというふうに思います。後藤さんの発言時間はまず3分でございます。よろしくお願いします。</p>
+</div>
+<div class="turn cand" id="t9"><div class="meta"><span class="name">後藤秀典</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1046s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>17:26</a>はい、じゃあよろしくお願いします。私、阪神大震災の取材をしたときに、神戸の市役所が途中の階がぐしゃっとなって潰れて、防災機能を果たせなくなった、そんな状況を見てきました。そんな状況を見ていると、やっぱり市役所というのは、防災機能を果たす上でとても重要だなと。だから一刻も早く、今、小金井の防災対策部は、一番古い本庁舎の中にあると。だから早くこれを建て直さなければいけないなというふうには思っています。ただ同時にですね、市内の小学校の、いや中学校の老朽化がすごく進んでいると。耐久性に問題がある小中学校がものすごく、耐震性ですね。耐震性に問題がある小学校が複数あると。これ私、知ったんですけど、教育委員会のホームページにある、小金井市学校施設長寿命化計画改定版というのがあって、この21ページあたりを見ると出てるんですけど、みんなその耐震強度、これ基準を満たしてないところが並んでる。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1114s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>18:34</a>赤丸で並んでるんですね。それを見ると、とにかくこの学校の建設も決して遅らせてはいけない。私はだから、この新庁舎の建設と、あとこの学校の建設、これを同時に進めていかなければいけないというふうに思っています。でも今年から一小の建て替えが始まりましたし、2030年から三小、2032年一中、2036年から二中と、どんどん建て替えが始まってくると。これと同時に、一緒に庁舎の建て替えを進めていかなければいけない。これ、とっても大変だなというふうに思っています。そのためにはまず、小金井市の財政状況を市民の前に明らかにすると。この学校の建て替えにいくらかかるか、これを全部計算して、その上で新庁舎を建てるのにいくらかけられるか、これを明らかにするということがまず第一。その上でそのお金の範囲内で、まず今までの市民の皆さんの知見も生かして、新しくコンパクトで使いやすい庁舎を建てる。そういうふうに進めていかないと、今みたいに財政根拠のない中で、170億円という額も出てますけど、財政根拠のない中で建設を進めていくのは、結局同じことの繰り返しになってしまうというふうに思います。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1200s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>20:00</a>今出てる市民案の中には、一部先に建て替えて、そこに防災対策など新しいものを入れていくと、そういう二次、三次の工事で建て替えていくっていうような柔軟な考え方も出ています。私はそういう柔軟な考えに基づいて、新庁舎の建設と、あとその学校の建設、これを同時にちゃんと進めていく、財政的根拠を持って進めていくということが重要だと思います。</p>
+</div>
+<div class="turn mod" id="t10"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1230s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>20:30</a>ありがとうございます。続きまして白井さん、お願いいたします。</p>
+</div>
+<div class="turn cand" id="t11"><div class="meta"><span class="name">白井とおる</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1234s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>20:34</a>はい。防災まちづくりの拠点整備として、早期に設計をやり直します。これまでの設計で進めた場合には、建設工事費が大きく膨らみ、今後の財政運営が危うくなると判断しまして、設計の見直しを決断したところであります。これまでの過程を少し説明しますと、私、市長に就任してすぐに、それまで止まっていたこの事業の再開を決めて、そして事業の再開方針を表明し、実施設計の続きを進めて、今から約2年前に建設工事費約130億円ですね、これを議会にて工事予算を可決いただきました。残念ながら入札に応じる事業者がなく、二度入札が中止となり、これはですね、建設業界の人手不足と建設費高騰の影響があったということです。3回目の入札に向けて早期建設を目指して調整をしておりましたが、事業者にヒアリングをしたところ、建設工事費が240億円相当を想定せざるを得ないという判断となりまして、ここまで高騰すると、今後の財政運営に大きな支障が出ることが明らかとなり、これまでの設計では進められないということで、設計の見直しというのを決断したところであります。しかしながら、今、後藤さんもおっしゃったように、本庁舎においては施設の老朽化が著しいです。防災拠点としての課題、また第二庁舎は庁舎の狭隘を解消すること、</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1327s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>22:07</a>そして福祉会館は先に閉館しましたので、福祉機能の充実、これが必要となります。ですので、早期に実現できるよう進めるということです。すでに議会にも示しておりますが、170億円を建設費の上限の目安、そして2030年着工、2033年竣工を目指して、時期の目安といたしまして、規模と機能と、そして整備手法、それを見直す検討に着手し始めておるところです。具体的な内容はこれからとなりますが、適宜、段階での検討状況をお示ししたいと考えております。3月末までには整備に関する方針、これをしっかり説明するというスケジュールを立てております。小学校、中学校の建て替え、これも調整しながら、並行してどのように進めることができるのか、他の事業、これもしっかりと見極めながら、将来の過度な負担が残らないように、財政の見通しをしっかり立てながら進めていきたいと、このように考えております。以上です。</p>
+</div>
+<div class="turn mod" id="t12"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1394s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>23:14</a>ありがとうございます。続きまして、田中さん、お願いします。</p>
+</div>
+<div class="turn cand" id="t13"><div class="meta"><span class="name">田中真一</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1397s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>23:17</a>はい。私は新庁舎の再建は、いち早く取り組まなきゃいけないことだと思っております。安全に、そして早く、安全に早くというキーワードで進めさせていただきたいと思っています。私は阪神・淡路大震災に被災したときに、神戸の町におりました。東灘区の寮に住んでおりました。5時46分、今でも忘れません。ものすごい縦揺れと20秒間横揺れをして、その後、神戸の町が本当にあれだけの被害を受けました。町が壊滅しました。市庁舎についても、神戸市の市庁舎も8階建てのものが6階部分が潰れて、そこで機能が果たせなくなったとありました。被災者になったときに、やはり私が一番頼りになったのは、やっぱり市役所でした。これからの生活は一体どうなるんだろう、それこそ私たちはどこに身を寄せるんだろう、今日の食事はどうなるんだろう、そして医者は、薬は、さまざまなことの不安がやはり皆さんに押し寄せました。そのときに市役所が機能しなくなるということは、絶対あってはならないと思います。昭和40年、1965年に建った小金井の市役所、正直申し上げて、首都直下型地震がやってきたときに機能を果たせるかどうか、私は正直思えません。そうなったときに一番困るのは市民の皆様方です。市民の皆様方の生命と財産、そして人権をしっかり守っていくというのが、私は政治の責任だと思ったときに、やはり皆様方が被災した際にしっかりと安心できるためにしなければならないと思っています。特にも今の庁舎の中には市長室があります。そして物事を決める議会の部屋があります。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1490s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>24:50</a>物事を決める人の部屋、そして物事を進める人の部屋がある建物が壊れてしまったときに、一体誰がどこで何を決めていくんでしょうか。それをやっぱり被るのは市民の皆様方です。そういった意味で、私は市役所の庁舎の再建は何が何でもいち早く進めなければならないと考えております。ただ、財源があります。今出せるお金、物価は高騰しております。ありとあらゆる手段を考えてまいりたいと思っています。11月2日、昨日から防災庁が設置されました。これは私が元勤めていた石破茂元総理が非常に力を入れて作られた防災庁です。そこには防災力強化総合交付金というのが新しくメニューとして提示されました。防災拠点としての市役所を作る、防災災害の司令塔としての市役所をしっかり作るという観点で、そうした国や、そして都や、そういったところのルートを通じて、しっかりと交付金等をいただけるような体制もしっかり作ってまいりたいと思っております。これまでの経験の中で作った人脈を生かしながら、一日早く市民の皆様方が安心をして暮らすことのできる、そういった庁舎をしっかり作ってまいりたいと思います。市民の安全を守ることが、私は政治の一番の責任だと思いますので、何といっても庁舎、災害が発生したときに皆様方が安心をして避難生活ができるための庁舎づくりを、一日早く進めたいと思っています。以上です。</p>
+</div>
+<h2 class="topic" id="topic3"><span class="no">3</span>クロストーク:新庁舎(設計・170億円・延期)</h2>
+<div class="turn mod" id="t14"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1571s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>26:11</a>ありがとうございます。それで皆さんの主張が出そろったということもございますので、それではクロストークの時間といたします。他の立候補予定者へのご質問、ご自身の主張、反論の補足がございましたら、挙手をしていただければというふうに思います。はい。じゃあそれでは早かったので、後藤さん、お願いいたします。ちなみに誰に向けてのご質問でしょうか。</p>
+</div>
+<div class="turn cand" id="t15"><div class="meta"><span class="name">後藤秀典</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1595s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>26:35</a>白井市長にぜひお伺いしたいと思います。お願いします。二つあります。一つは、白紙撤回しちゃった原因が資材高だっていうふうに言ってるんですけど、それ以外にもともとの設計に問題はなかったのか。L字型の建物の設計、それからその結果、面震と耐震が混在する、こういうコストのかかる設計に問題はなかったのか。それが一つです。それから170億円で本当に保てるのか。実は170億円でずっと建設をしていくと、2030年には市の借金、いわゆる年度末現在高、これが31億円を超えて、どんどん毎年増えてしまう。小金井の財政規律は、年30億円の借金を返していく、これが限度だって言われています。これを超えてしまうと、結局、小金井の財政をとても厳しいものにしてしまう。170億円っていうのは、市は財政的根拠ないって言ってましたけど、これでどうやって作るんでしょうか。</p>
+</div>
+<div class="turn mod" id="t16"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1658s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>27:38</a>それでは白井さん、お願いします。</p>
+</div>
+<div class="turn cand" id="t17"><div class="meta"><span class="name">白井とおる</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1662s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>27:42</a>ご質問いただきまして、ありがとうございます。まず、元々の設計に問題はなかったのか、ということでございました。私は設計そのものに問題はなかったと考えています。それはですね、設計というものは、基本設計から実施設計にかけて、市民参加を含めてですね、積み上げてきたものでございました。そこに至る過程はさまざまな要因があって、この設計でいこうということを決めてきたわけなんですね。設計は建築確認申請というのもしっかり取っておりますので、設計そのものに問題があったわけではないんですね。ただ、ご指摘されているのは、もっと安くできるような設計はできなかったのかということ。与えられた条件の中で作った設計としては、私は問題ないと思っているんですけど、今回設計をやり直すとなった際には、いろいろご意見いただいていることなんかは当然参考にさせていただきながら、コストを抑えられる設計ということも前提にやるべきだと考えています。もう一つ、170億円で建てられるのか、ということでございました。確かにその170億円で、あくまで目安という金額で設定をしておりますが、結局お金の問題で建てられなかった。じゃあいくらだったら建てられるのか。庁舎は最優先な事業なんですね。ですので、おっしゃったように学校も大事なんです。ところが学校を先に建てていくと、庁舎は建てられません。ですので170億円という枠を決め、</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1754s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>29:14</a>そしてそこから学校の時期であったり、手法であったり、それ以外の事業ですね、優先順位をつけながら財政の見通しを立てていくという組み立ての順番になっています。ですので、170億円というのを上限に設定した上で、その他の事業を調整して、しっかりバランスをとってやっていくということを私は考えております。以上でございます。</p>
+</div>
+<div class="turn mod" id="t18"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1775s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>29:35</a>はい、ありがとうございます。他にご質問はございますか。はい、田中さん、お願いします。</p>
+</div>
+<div class="turn cand" id="t19"><div class="meta"><span class="name">田中真一</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1781s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>29:41</a>私も白井市長にご質問があります。旧耐震設計で60年を経過している建物がある。やはりその建物というのが、非常に働く市役所の職員の皆さん等に、本当に実際に災害が発生した時に危ないということを認識されているのであれば、なんで今回その庁舎の再建を延期するという判断になったんでしょうか。やはり為政者として、私は一番取り組まなきゃいけないのは市民の安全です。その安全の司令塔となる市役所の建設を延期した、いわゆる白紙に戻したということは、これからまた市役所の試算によっては、例えば7年とか10年、またかかることになります。そういう時間はもう本当に小金井の街にはないと。首都直下型地震も30年以内に起こると言われている中で、なぜそういう判断になったのか。それについては私はお聞かせいただきたいと思います。</p>
+</div>
+<div class="turn mod" id="t20"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1833s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>30:33</a>はい、白井さん、お願いします。</p>
+</div>
+<div class="turn cand" id="t21"><div class="meta"><span class="name">白井とおる</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1835s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>30:35</a>はい、田中さんまでご質問いただきまして、ありがとうございます。おっしゃった通りですね。私も言いましたけども、やっぱり施設の老朽化、非常に本庁舎、激しいです。これが災害の拠点になりますので、本当にこれは早く解消しないといけないという考えで、これは変わりはありません。ただ、延期したわけではないんですね。これもお金の話です。ご存知だと思いますけども、結局、今のまま進めると、学校も一切もう進められなくなりますし、財政調整基金が枯渇する。これ何かというと、結局、大幅に借金をして建てるっていうことになりますので、その返済に今の金利が上昇してますので、それが乗っかってしまって、返済が始まっていくと、財政を圧迫して、財政調整基金という貯金を取り崩しながら、運営していけるとは言えなくなってしまう。財政調整基金ももう枯渇してしまうんじゃないかとなると、財政運営、成り立たないわけですよね。ですので、今の設計の内容では、申し訳ないですけども、建てられません。なので、見直す必要がありますということになります。さっき申し上げましたように、早期に設計をやり直すんです。これは170億円という枠を当てて、もうこの範囲内で何ができるかということを考えるということになります。私自身、そこに努めてますから、今も。公務やってますから。本当に早くこの老朽化の庁舎を解消しないといけないということ、これは市民の皆さんの安全安心のためであります。ただ、もし今のまま建てたとしても、できるのは4年半後なんですよね。これも考えないといけないです。じゃあ、今のまま建てるとしたとしても</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1926s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>32:06</a>その間、何もしないのかっていうと、これも考えないといけないなっていうのは、もともと考えていました。ですので、今、時期の目安を2033年春頃と目安として、今検討に動いてるわけですけども、できるだけ早くこの庁舎建設を進めるっていうのは、私は必要だということは変わりはございません。以上です。</p>
+</div>
+<div class="turn mod" id="t22"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1948s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>32:28</a>はい、ありがとうございます。他にご質問、ご意見ある方、いらっしゃいますでしょうか。はい、それではないということなので、私の方からですね、ぜひ市民の皆さん、こう思うんじゃないかなという質問をさせていただければというふうに思います。ありますか。そうですね。はい、わかりました。白井さん、お願いします。</p>
+</div>
+<div class="turn cand" id="t23"><div class="meta"><span class="name">白井とおる</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=1966s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>32:46</a>質問ではなく、ちょっと反論という形になりますので、答えはいりませんけども、さっき後藤さんがですね、小中学校の長寿命化計画、これの引用された中において、学校の耐震を満たしてないものがたくさんある、耐震を満たしてない学校がたくさんあるっておっしゃったんですけど、これちょっと正確ではないんですね。耐震はもう満たしてます。ただし、多分おっしゃってるのはコンクリート強度の問題かなと思います。ですよね。コンクリート強度、確かにコンクリート強度の基準を満たしてないものもたくさんあるんですけど、あれ、さらにやっぱり調査しないとわからないというふうに言われてます。1カ所だけ、何カ所かだけ見るんじゃなくて、やっぱりたくさん見ないとわかりませんので、耐震は満たしてるけども、コンクリート強度を満たしてない可能性もあるので、なお調査が必要だということを、ちょっとすいません、補足をさせていただきました。以上です。</p>
+</div>
+<div class="turn mod" id="t24"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2018s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>33:38</a>はい、ありがとうございます。他にご質問等ございますか。大丈夫ですか。それも先ほどちょっと言いかけたんですけど、私の方から、1人1人、1つのテーマにつき1人聞くという形で、ちょっと時間調整をさせていただきたいなというふうに思います。私の方でお伺いしたいのは、田中さんにちょっとお伺いしたいなというふうに思うんですけれども、今回のテーマの本質的なものを見ていくと、新庁舎の多額の税金がかかるわけだと思うんですよ。ものすごく高い金額のものがかかると。そしてこれも1つの市長選挙の争点になると思うんです。皆さんがどこに入れるかの1つ基準にあると思うんですが、その中においてですね、やっぱり一番大事なことっていうのは、この建設するかだけではなくてですね、どこまで費用をかけていつ作るのか、そして何を優先するのか。もちろん、こういうのをお金かけていくと、学校の老朽化の対策が薄れていくとかあると思うんですけれども、そこについてですね、田中さんにちょっとお伺いしたいんですけれども、ちなみにこれはどこまで費用をかけて建てるべきか、そしていつまでに建てるべきかというものが、もしお考えをお持ちでしたら、ちょっとお伺いしたいなというふうに思います。</p>
+</div>
+<div class="turn cand" id="t25"><div class="meta"><span class="name">田中真一</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2084s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>34:44</a>どのぐらいのお金をかけられるかっていうのは、私はまだ現職でもないのでその情報を持ち得ませんが、それは市の財政当局としっかり話をさせていただいて、どのぐらいの規模だったらお金が出せるっていうことを聞いた上で考えていくことだと思います。例えば今、早期に建てるんであれば、240億、今かかるっていうんであれば、240億のお金をどこから調達すればすぐに建ちますよ。でも正直言って、それを持ってくることってのは厳しい。国にうかがうから助成金もらうのも非常に厳しいとなった時には、今かけられるお金の中でどれだけのものが作れるかということのスペックを、しっかりと相談していくことだなというふうに思っております。また、様々な手法があると思いますが、そこはありとあらゆることを模索していきたいと思って、ただ、福祉会館と一緒に作るということが、もし前提になってしまうと、それはなかなか難しい。やはり一番最初に作るのは庁舎ということで、分離して作ることも考えなきゃいけないと思うし、ありとあらゆる可能性をしっかり模索して、私は災害発生時の司令塔となる庁舎を1日も早く作ることだというふうに思っております。</p>
+</div>
+<h2 class="topic" id="topic4"><span class="no">4</span>都市計画道路(3・4・11号線、3・4・12号線)</h2>
+<div class="turn mod" id="t26"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2149s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>35:49</a>はい、ありがとうございます。今、前回の時は資材高騰でかなり建設費が高騰したっていう経緯があったと思うので、そこに関してはある程度の数字っていうのも、もしあると、より皆さんは判断しやすいんじゃないかなというふうに思いましたので、ご質問させていただきました。それではテーマの1はこちらで終えさせていただきたいなというふうに思います。それではテーマ2に移らせていただきます。都市計画道路について、こちらについて語っていただきたいというふうに思います。2026年3月に決定された東京都の整備方針において、市内では小金井都市計画道路3・4・11号線、東京都施工と、3・4・12号線、こちらは市の施工で優先整備路線とされております。整備路線ですね。両路線について市長としてどのように関わっていくお考えか、展望と施策をお聞かせいただきたいというふうに思います。こちらに関しては、先ほど田中さん、後藤さんと来たので、次の白井さんからお願いいたします。</p>
+</div>
+<div class="turn cand" id="t27"><div class="meta"><span class="name">白井とおる</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2206s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>36:46</a>はい。引き続き優先整備路線に位置付けられました、まず東京都施工の都市計画道路3・4・11号線、これにつきましては、その整備にあたって、国分寺崖線と野川周辺の自然環境への影響、これが非常に課題となっております。この周辺につきましては長くですね、自然環境や生物多様性、これを守っていこうと活動されている市民の方々がいらっしゃいます。私自身も小金井市に転居してきた時に、実は最初この周辺近くに住んでおりました。この自然環境をできるだけ守りたいと考えております。しかしですね、昨年9月、市独自の検証、これを踏まえた上で、この路線につきましては道路整備の必要性は否めないという判断をいたしました。これは私が4年前掲げた公約とは異なる判断でございます。大変申し訳ございません。今現在、東京都がですね、概略設計を進めております。これは自然環境の配慮を含めて橋を架ける、この橋梁案でのどのような施工をするか、その施工方法を含め明らかになると考えてまして、それが明らかになった段階で、自然環境の影響をできる限り低減できる、守ることができるように必要な意見を東京都へ伝えてまいります。これについては東京都へ昨年、要望書も提出してまして</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2298s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>38:18</a>できるだけ多くの方にご理解いただけるように、尽力することも引き続き東京都へ求めてまいります。3・4・12号線、こちらは市の施工でございます。東京都の第5次の計画策定にあたって、こちらも市の検証の中で未着手の都市計画道路の路線を比べた結果、優先性が高いということで市で選定して、優先整備路線に選ばれました。ただ、この路線の事業化はまだ先だと考えています。今、梶野町の方で3・4・8号線という道路、またその他にも道路整備事業をやっておりますので、これらが終了した後に着手する、このようなイメージを持っています。この路線の最大の課題は、北大通りからクランクしている部分、ここが非常に課題であるので、南側部分を例えば切り離して分割して事業を進めることなどどうかと、これらの議会の皆さんからもご意見いただいてますので、そういったことも検討しながら丁寧に進める必要があると考えております。いずれにせよ、事業を着手する場合は、早い段階で当該路線の権利者の皆様、周辺の住民の皆様に丁寧にご説明をしながら、理解を求めて進めていく、このような考えが必要だと私は思っています。以上です。</p>
+</div>
+<div class="turn mod" id="t28"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2377s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>39:37</a>ありがとうございます。続きまして田中さん、お願いします。</p>
+</div>
+<div class="turn cand" id="t29"><div class="meta"><span class="name">田中真一</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2379s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>39:39</a>はい。私は都道3・4・11号線は必要との立場でおります。それは先ほどの第1問の質問もありました、防災力強化の観点で必要だと思っております。小金井のまちは、やはりこの東西の移動網というのは非常に整備をされています。中央線もそうですし、甲州街道、それから五日市街道、それから東八道路も含めて、連絡道路も含めて、非常に東西の道路網というのは整備をされていると思っています。ただ、南北道というのは小金井街道、それから新小金井街道というのがあって、ただいつも残念ながら、下から上に上がるときは渋滞をしているという状況です。災害が発生したときに、やっぱり市民の皆様方、避難をするルート、やはりこの南北道の整備というのは、命を守る道路として私は必要だと考えています。ですので、やはり南北道をもう一本しっかり作らせていただく観点からも、3・4・11号線の整備は必要だと思っています。ただ、やはり野川の自然をしっかり守っていくという観点は、決してこの小金井に住む市民としては忘れてはならないことだと思っていますので、自然に最大限配慮した上での道路整備を進めなければいけないというふうに考えております。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2450s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>40:50</a>一方で、3・4・12号線でございます。これについてはまだ計画の段階でもございますし、また、これは市民の皆様、特に北大通りより北の部分につきましては、やはりそこにはまだ住民の方たちがいらっしゃいます。丁寧な議論、また丁寧な説明をした上で、合意形成をしっかり図った上で進めていくべきものだと考えております。ただ、そこについてはまだ先の話だというふうに考えておりますが、3・4・11号線については、これはもう計画も進んでいます。特に先日、府中市の高野市長ともお話をしたときに、もう府中市はちゃんと構えているんだよと、早く小金井市で決めてくれと、道路をしっかりつないでくれということは言われておりますので、しっかりと私たちは進めてまいりたいと思っています。以上です。</p>
+</div>
+<div class="turn mod" id="t30"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2491s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>41:31</a>ありがとうございます。続きまして、後藤さんお願いします。</p>
+</div>
+<div class="turn cand" id="t31"><div class="meta"><span class="name">後藤秀典</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2494s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>41:34</a>私は3・4・11号線については建設に反対です。市民の皆様と一緒に東京都に対して、この建設の中止を強く申し入れていきたいというふうに思います。まずこれ、武蔵野公園に残る貴重な生態系に影響が出る可能性があるということと、あとやはり小金井の魅力っていうのは、この北に行っても南に行っても大きな公園があること。これを破壊するということは、私は反対です。ただ私、ずっと震災あるたびに取材をしてきたので、そこで本当に都道3・4・11号線が、防災、特に防災というよりは、本当に震災が起きたときに役に立つのかどうかということをちょっと話してみたいと思います。まず一番重要なのは、救急車が3・4・11号線ができると、榊原病院に10分から12分かかるところが早くなるというような話が出てます。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2559s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>42:39</a>これ、10分から12分、3分、これ半分にしても5、6分の差が出るというふうに言われていますが、今、救急体制で一番問題なのは何かというと、救急車が到着してから次の病院が見つかるまでに何分かかるかということなんですね。これ、東京都で22分かかるんです、平均。この間に病院を決める、この時間をどれくらい短くするかというのが最大の今、救急体制の問題になっています。これは特に第三次救急医療、これは一番重篤な人が運ばれていく医療なんですけど、ここが今、非常に診療報酬が低かったりして経営が厳しくなっている。そのおかげで、救急車がなかなか出発できない、患者さんを受けて出発できない。この事態をなるべく早く解決すると。これは小金井市だけではちょっと難しいかもしれませんが、東京都、それから医療機関、それと相談して一刻も早くこれを早く解決すると。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2623s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>43:43</a>だから、大型消防車が狭いトンネルを通れない、西武多摩川線のね、あれは簡単に解決できるのではないかと。隣に大きな遊歩道があって、そこは道幅も広いし、天井も高いと。ここを通れるようにすればあっという間に解決すると。私が思うのは、何十年も先に救急車が5分早まるのを優先するのか、それとも今できる、その第三次救急体制をなるべく早く正常な状態に戻す、もしくはそれと同時に、遊歩道を大型消防車が通れるようにする。目の前でできることを最優先にやることが重要だというふうに思ってます。</p>
+</div>
+<h2 class="topic" id="topic5"><span class="no">5</span>クロストーク:公約の実現と、都道の中止要請</h2>
+<div class="turn mod" id="t32"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2679s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>44:39</a>はい、ありがとうございます。それでは皆さんのご意見、ご主張がそろったということもございますので、これからクロストークの時間に移りたいと思います。ご意見お持ちの方おりましたら、ご意見、ご質問ですね、補足などありましたら、挙手にてお願いいたします。はい、後藤さんお願いします。</p>
+</div>
+<div class="turn cand" id="t33"><div class="meta"><span class="name">後藤秀典</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2698s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>44:58</a>すいません、また白井さんにご質問してしまうんですけど、この市庁舎の建設も含めてなんですけども、この3・4・11号線の建設の中止、それから、今回論点になってないんですけど、公立保育園の5つの存続、これ4年前に白井市長さんが公約に掲げたことだと思うんですけど、これ実は一つも実現していない。これはなぜなのかなっていうのを、私もこれと同じ公約を掲げてますんで、これはなぜなのかなっていうのはぜひ聞いてみたい。つまり、これは市長さんになったら、やっぱりこの公約そのものが間違っていたっていうふうに考えるようになったのか、どうしてそうなっちゃったのかなっていうのを、ここ2つ目が出てきたところなんで、ぜひちょっとお伺いしたいところです。</p>
+</div>
+<div class="turn mod" id="t34"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2742s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>45:42</a>はい、白井さんお願いします。</p>
+</div>
+<div class="turn cand" id="t35"><div class="meta"><span class="name">白井とおる</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2744s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>45:44</a>はい、後藤さんありがとうございます。ご質問に答えます。3・4・11号線、公立保育園、新庁舎、全て実現してないよねという厳しいご指摘でございます。まず3・4・11号線については、先ほど私から説明させていただいたとおりです。ただ、これは市独自の検証をしました。じゃあなんで検証したかというと、中止・見直しを求めるにあたって、そもそもの事業化計画そのものが、東京都が独自に勝手に作ったわけではなくて、東京都と区市町全部集まって、そして話し合って、意見を出し合って決めた計画だったわけですね。それに対して中止・見直しということを言うのであれば、市としての整備の必要性がないという根拠を作らなければならないということです。ですので、市として独自の検証をしました。その検証の結果、それに対してどう判断するかというのは、やっぱり区市長の責任だと思いますけども、その結果、私としては、田中さんもさっきちょっとおっしゃったけども、3.6キロにわたって南北の幹線道路がないっていうものは、防災なども含めた観点から、市長という立場から市民の皆さんの安心安全を守ることにはならないと、私は感じましたので、ただ中止・見直し、もともと求めていた立場ですので、なかなか推進という言葉は使えませんけども、この道路がいらないということは私の立場でも言えませんという、こういう考えになりましたということです。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2830s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>47:10</a>公立保育園、ちょっともっと説明したいんですけど、ちょっと時間がないので割愛させていただきますが、結果的に公立保育園は廃園を1回戻す条例、私、提案しましたが、議会の皆さんに認めてもらえなかったんですね。戻すのであればそのタイミングしかなかった。結果的に最後、公立保育園の役割を議論した上で答申いただいて、新しい方針作って、新しい条例で今整理をしたところです。ですので、全く何もできていないという話ではないんですね。新庁舎の件はさっき言いました。そういう状況になったので見直すということで、諦めたわけではございません。以上です。</p>
+</div>
+<div class="turn mod" id="t36"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2867s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>47:47</a>はい、ありがとうございます。他にご質問お持ちの方、いらっしゃいますでしょうか。はい、じゃあないということなので、私からちょっとご質問したいなと思うんですが、後藤さんに質問してみたいなと思うんですよ。都市計画道路に関してなんですけども、お二人は、白井さんと田中さんは賛成の立場と言っておられると。後藤さんだけは反対して、反対の立場を取られている。その中で都道ですね、都道の3・4・11号線について反対をされているということなんですけれども、これちょっと気になったのが、例えば反対を、中止を要請するじゃないですか。これ、じゃあ作りますってなったら、その先どうするのかなっていうのがちょっと気になるところなんですよ。おそらくここにいる皆さんの方々も、中止にしてほしいという、応援してくれる方々もいると思うんですけれども、その都道が中止にできなかったっていう説明に納得できないと思うんですよ。そういうことを考えていくと、中止にならなかったらどうなるのか。今までの過去の例で言うと、都道に関しては中止というふうに主張しても、それが中止になった試しがないっていうことを、僕の調べでは聞いているというところもあるので、これ中止って言われたらその先どうするのかなっていうのを、もしお伺いできればというふうに思います。</p>
+</div>
+<div class="turn cand" id="t37"><div class="meta"><span class="name">後藤秀典</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=2938s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>48:58</a>確かにこれ、都道の問題です。東京都の問題だと思います。ただ東京都は、住民が本当に反対していれば、それを強行しないよっていうことも言ってるんですね。だからそこはそこで、ちゃんと、つまり、もし私が市政を担うことになったら、市民の総意として、総意じゃないですね。賛成してる人もいるんで。多数の市民の要望として、それを背負った首長として、この建設を東京都に強く中止を求めていきたい。これをはっきり言おうと思います。これに対して本当に、都がそれでも強行するぞって言ってくるかどうかは、私との態度をちゃんと見極めていきたいなというふうに思っています。それでも強行してくるということになったら、これは住民の皆さんと一緒に、私も絶対それを許さない。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3000s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>50:00</a>いう立場で、座り込みも含めて絶対それは許さないという立場で戦っていこうかな、というふうに思っています。</p>
+</div>
+<h2 class="topic" id="topic6"><span class="no">6</span>人口構造の変化と定住</h2>
+<div class="turn mod" id="t38"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3007s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>50:07</a>はい、ありがとうございます。強い覚悟があるということで、多分今日来られている方も安心する方もいたかなというふうに思います。それではですね、こちらに関してはこちらで一旦とさせていただいてですね、それでは続きまして次のテーマとさせていただきたいと思います。テーマ3が、人口構造の変化と定住について、語っていただきたいなというふうに思っております。小金井市では、今後、生産年齢人口の減少と高齢化の進行が見込まれています。若い世代や子育て世代が小金井市に住み続けられるまちづくりについて、財源の確保を含め、展望と施策をお聞かせいただきたいというふうに思います。こちらに関してはですね、先ほど、白井さん言って、田中さんからですかね。あ、すいません。はい、それでは田中さんからお願いいたします。</p>
+</div>
+<div class="turn cand" id="t39"><div class="meta"><span class="name">田中真一</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3051s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>50:51</a>はい、ありがとうございます。実は、この私たちのこの小金井市というのは、多摩26市の中で一番平均年齢が若いんですよ。45.10歳ということで、本当に若い世代に選ばれるまちであります。最初の質問でちょっと言い切れなかったんですけど、本当に教育が非常に豊かでですね、非常にこの若い世代には求められるまちだということでございます。その中で、実はこの税収のあり方というのが、個人の住民税、個人のですね、市民税というのが税収のうちの52%なんですね。そして法人のですね、住民税、市民税というのだったら2.7%なんですよ。2.7%。隣の国分寺市は4.7、東久留米市は3.3、そして昭島は7.3という形で、ほかの近隣のところに比べて、極めて実は法人の市民税というのは低いんですね。やはりこの法人をいかに育てていくのかっていうことが、私は定住をしていくにあたって、とても大事な方じゃないかと思っております。実は先般ですね、農工大の中にですね、ベンチャーポートというところがあるんですね。それは新しい産業を育てることをやっているところがあるんですが、そこ、ちょっと見学に行ったんですよ。そしたら5年前に入られたある企業がですね、実はそこで試作をしながらやっていたんですが、最初は一つのお部屋しか借りてなかったんですね。農工大の中のお部屋をですね。だけど人が非常に増えてですね、四つお部屋を借りるようになったんですね。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3144s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>52:24</a>そして働いている人もですね、今じゃ30人になったそうです。ただ5年たったので、実はお約束があって、5年たつと出なきゃいけないそうなんですよ。ただ、本当はこの小金井のまちの中で実はどっか移したいんだけども、その場所がないということを言われています。ですので、やっぱりそういった新しい産業がですね、本当にスタートアップして育ってきている人たちの受け皿となるような場所を提供することは極めて重要なことだなと思っています。やはり、あるものを持ってくるんじゃなく、ここから生んでいく。メイドイン小金井の、やはり新しい産業を育てていく、新しい知恵を育てていく。産官学が一体となって育てていくことは、私は極めて重要であって、そこで育んだものが定住化につながっていくことになっていくんではないかなというふうに思っています。また、この小金井のまちっていうのは、皆様方、お年寄りの人たち、本当にお元気です。健康長寿、平均ですね、健康寿命というのが、実は令和5年は男性の方ですね、84.19歳。これ実は一番なんですね。26市の中で一番。そして女性もですね、84.79で3位なんですね。元気なお年寄りがたくさんいらっしゃるんですよ。ですので、その元気なお年寄りの方たちが活躍できる場を社会の中で作っていければと、そんなことも考えています。以上です。</p>
+</div>
+<div class="turn mod" id="t40"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3228s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>53:48</a>はい、ありがとうございます。続きまして、後藤さん、お願いいたします。</p>
+</div>
+<div class="turn cand" id="t41"><div class="meta"><span class="name">後藤秀典</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3231s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>53:51</a>税収が、つまり小金井の歳入を見ると、それがトップが市税だと。市税の中でも市民税がとっても多いと。そこの認識は田中さんと同じです。だから、小金井市って何で成り立っているかというと、皆さん暮らしている人たちの税金で成り立っているわけですよね。これは大きな企業もない、それに競馬場もない。その中で頼っているのは市民の税金なんです。それをどうしていくか。そのためには今住んでいる人がずっと住み続けられる。そこで私、「安心してずっと暮らせる小金井」っていうテーマを掲げてるんですけど、これは市の経営にとってもとっても大事だと思うんです。今住んでいる人がずっと安心して暮らせる。つまり生まれてから死ぬまで、いろんなつまずきがあってもそれを助けられる。つまり、ここにいれば子育てから結婚から、それから自分の親の介護から、自分が亡くなるまで、子供の教育、そういう、いわゆる福祉、それから社会保障、これを充実させることが、最大の市を維持していくその要因になるというふうに思ってます。もう一つは、じゃあ外から誰がやってくるか。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3321s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>55:21</a>この1億円もマンションが値上がってる中で、みんな郊外を目指してくるんですけど、小金井の最大の魅力っていうのは、やっぱ南北に大きな公園があること。私自身が野川公園と武蔵野公園の魅力にひかれて、ここに暮らして33年になってしまった。それを考えると、これを破壊するようなことをやっていたら、私は移り住んでくる人はいなくなってしまう。また、公立保育園を廃止してしまったりしたら、これまた移り住んでくる人がいなくなってしまう。つまり、今、市が進めている保育園の廃止だとか、あと都道の建設だとか、これはまさに小金井の経営を持続的に続けていく、これに反するものではないか。私はこの社会保障、生活保障をちゃんと整えて、暮らし続けられるようにしていく。その上で緑を守っていく。これが小金井の持続的な経営につながる、というふうに考えています。</p>
+</div>
+<div class="turn mod" id="t42"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3386s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>56:26</a>はい、ありがとうございます。続きまして、白井さん、お願いします。</p>
+</div>
+<div class="turn cand" id="t43"><div class="meta"><span class="name">白井とおる</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3390s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>56:30</a>テーマが人口構造の変化と定住について、ということでございます。人口構造、できるだけ大きな変化がないようにする。できるだけ変化があってもなだらかにする。これが現実的な答えなんだろうなと思っております。すなわち子育て世代ですね、そして20代、30代、こういう若い方々の定着、これが非常に重要課題となります。その上で2点ですね。まずは、働きながら安心して子育てができる、その環境を整えることです。妊娠から出産、子育てまで切れ目のない子育て支援、これに改めて力を入れること。また保育園や学童保育所、この環境の充実です。量の確保とともに質の維持向上、これにも努めなければなりません。そして地域ぐるみで子育てができるという、これも安心できる環境を作るということですね。今日は学童保育の保護者会、保護者の皆さんが主催する運動会というのがあるんですけども、まさにそれを地域ぐるみで、みんなで子供を育てようという、こういう取り組みなんかもされております。こういうことが非常に重要です。既に触れたように教育熱心な親御さんも多いですし、教育先進都市として、また子供の権利を推進するこのまちだからこそ、子育て世代に選ばれる、引き続き選ばれる、そういうまちとして発展させていくことが必要であると考えます。二つ目は若い人ですね。20代30代の方々がこの市内に定着、</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3482s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>58:02</a>または関係人口化するという、その働きかけを市としてしっかりと取り組むということです。大学専門学校ともに三つあります。若い方々多いです。20代と30代、共に小金井市は突出して、転入と転出、突出して20代30代多いんですね。たくさん入ってくるけど、たくさん出てくるってことなんです。これ何かっていうと、チャンスがあるってことなんですね。それだけ多くの若い人たち、20代30代が入ってきているということは非常にチャンスなわけです。この若い方々がこの小金井っていうまちを、自分と関わりのあるまちだと感じていただく、働きかけや仕掛けやイベント、催し、こういったことをやることによって、もしかしたら転出する方が、ちょっと留まろうかなと思うかもしれない。実際にですね、若者未来トークというイベントをやりました。そこに参加された若い方が、これ3年前でしたけども、実は他市から小金井市に転入してきました。そして地域のコミュニティスペースなんかを、実は作りながらですね、活動されてたりもします。こういう若い人たちが小金井市に定着する、もしくは移っていったとしても関わりを持ち続ける、こういう関係性の働きかけをする。若い人たちに選ばれるまちにする。これこそがこれからの小金井市の浮沈に関わる重要課題であると認識をしておるところでございます。以上です。</p>
+</div>
+<h2 class="topic" id="topic7"><span class="no">7</span>クロストーク:待機児童と公立保育園</h2>
+<div class="turn mod" id="t44"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3569s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>59:29</a>はい、ありがとうございます。それでは皆さん、ご主張そろったということもございますので、クロストークに移りたいと思います。何かご意見、ご質問などお持ちの方、ご主張などお持ちの方おりましたら、挙手にてお願いいたします。はい、後藤さん、お願いします。</p>
+</div>
+<div class="turn cand" id="t45"><div class="meta"><span class="name">後藤秀典</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3583s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>59:43</a>すいません。ずっと白井市長にいろいろ聞いてしまっているような感じで、申し訳ないんですけれども、今、私言ったように、ここの小金井をずっと維持していくには、ここでずっとやっぱり社会保障があって、教育環境、ずっとここで暮らし続けていける環境を作っていくっていうことが大事だっていうふうに言ったんですけど、その特に子育て環境で、いまだに隠れ待機児童が100人以上もいるのに、保育園を2つも廃園にしてしまう。これね、実は私がこれをSNSに書いたら、「じゃあこの街に行くの、マンション買うのやめようかな」って書き込みがあって、これちょっとまずかったかなと思ったんですけど、そういうようなこと、つまりこれって逆行することではないか。緑を、都道の建設もそうなんですけど、これって小金井に人が入ってくる、それから暮らし続ける、これに逆行する方向ではないかな、政策ではないかなと思うんですけれども、いかがでしょうか。</p>
+</div>
+<div class="turn mod" id="t46"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3643s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:00:43</a>はい、お願いします。</p>
+</div>
+<div class="turn cand" id="t47"><div class="meta"><span class="name">白井とおる</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3643s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:00:43</a>はい、ありがとうございます。しゃべる機会を与えていただきました。ありがとうございます。おっしゃることはわかります。ただしですね、隠れ待機児童っていう定義が明確ではないっていうことを、改めてお伝えをさせていただきたいんですね。おそらく後藤さんが100人ぐらいいるっていうことは、おそらくこの4月入所に向けての一次審査で不承諾だった方が、確か100人いるっていう、それをもって隠れ待機児童っておっしゃってると思うんですけど、その中にはですね、その後、認可外であったりだとか、違う保育の道をしっかり探した方もいらっしゃいますし、当然、入れなかったって、私も苦情というかお声を直接いただいてますんでね、本当に入れなかった、待機児童になっている方もいらっしゃるんですけども、その100人っていうのが全て本当にその待機児童的な扱いの方なのかっていうことが、しっかりやっぱり分析しないといけないと思ってます。廃園の問題についてはいろいろご指摘をいただいておりますが、市全体の保育の質の維持・向上のために、公立保育園の保育士をどう配置して、しっかりと市全体の保育をより良くしていくかっていう、こういう仕組みづくりの話なんですね。確かに定員もちょっと縮小しましたので、今ちょっと課題になっておりますけども、民間の保育園を含めてですね、しっかり定員の確保については、なお取り組んでいきたいと、このように考えております。以上です。</p>
+</div>
+<div class="turn mod" id="t48"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3735s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:02:15</a>はい、ありがとうございます。他にご質問やご意見などお持ちの方おりますでしょうか。はい。じゃあ白井さん、あ、補足。はい、大丈夫です。</p>
+</div>
+<div class="turn cand" id="t49"><div class="meta"><span class="name">白井とおる</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3745s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:02:25</a>すいません。ちょっと質問できなくて申し訳ありません。ちょっと補足させていただきます。このテーマに関して、さっき少し触れたんですけども、若い人が実際に参加された場、それを経験して小金井市に転入してきたっていう例の話をさせていただきました。他にもですね、今年、若者気候市民会議っていう会議をやりました。若い人に限って、これからの気候変動に対してどう考えていくのか、行政に期待することは何か。これ、非常に良かったです。若い人たち、おそらく多分、今までそういう場に参加したことのない若い人たちばっかりだったんですね。ですので、ある意味新鮮だったっていうことと、やっぱりそういう場を作ることによって、初めて小金井市っていう街のことを考えるっていうきっかけになりました。さっき私が申し上げたことも含めてなんですけども、今までやっぱりそういう若い人たちの声を丁寧に聞いて、市政に反映させる仕組みっていうのはなかったわけですね。今、着手し始めたところですので、この定住のテーマに関連して、やはり必要なことだと考えました。以上です。</p>
+</div>
+<h2 class="topic" id="topic8"><span class="no">8</span>コーディネーターの質問:若い世代の経済的な機会</h2>
+<div class="turn mod" id="t50"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3809s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:03:29</a>ありがとうございます。他にご質問やご意見など、もちろんどおり、いらっしゃいますか。大丈夫ですか。そしたら、じゃあ私の方からですね、ご質問させていただきたいと思うんですけど、次は3人ですね、ご質問させていただきたいなと思います。若い世代が住み続けられる街づくりの重要性、先ほども20代、30代という主張をたくさんいただいてるんですけれども、これは私が思う考えなんですけれども、今の日本の社会構造上、どうしても若い人ってお金がないと思うんですよ。お金がないってことは機会がないと思うんですよ。年を重ねるごとにキャリアが上がっていって、そして給料っていうのが増えていくと思うんですよ。なので若い人って、今の時期において本当にお金がないなというふうに、お金がない人が多いんじゃないのかなというふうに思うんですよ。皆さんもよくですね、お金がない、お金がない、物価が高いって言うけれども、おそらく今の20代、30代の方々っていうのは、それをダイレクトに感じてるんじゃないかなと。若い世代こそ、本当はいろんな経験をした方がいいと思うんですよ。海外に行ったり、その先にいろんなものも行かせるし、美容もやったらいいと思いますし、いろんな経験が必要だと思うんですよ。皆さんの時のようなバブルの時代というのは経験していないですし、海外旅行も100円、円がですね、100円の時もなかっただろうし、そういう意味で考えていくと、若い世代っていうのは本当に苦しいのかなというふうに思ってるんですよ。白井さんが先ほどおっしゃっていたのが、やっぱり若者会議だったりとか、若者のコミュニティを作っていこうというような考えだったと思うんですよ。本当にそこが若い人たちが求められているものなのかなというのが、すごく疑問に思う部分があって、そこではなくて、どちらかというと負担が増えてしまうところが大きいんではないのかなというふうに思ったりします。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3900s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:05:00</a>私も自治会とか入っていてですね、本当に年が上の方々がたくさんいてですね、若者が本当にいないなと思ったりするんですよ。青年会議所も40歳までの団体なんですけれども、若い人って本当になかなかいないんですよ。今、青年会議所のメンバー何人かいますけれども、本当に若い人たちが地域に関わるっていうのは努力してるんですけど、なかなか集まらない現状があると。そんな中においてですね、どのようにその経済的な機会の損失だったりとか、そういうチャンスを与えられるのか、そしてそのコミュニティ構築がそれにつながっていくのかっていうところをですね、もし考えがあれば聞かせていただきたいなというふうに思ってまして、ぜひご質問させていただきたいなと思います。</p>
+</div>
+<div class="turn cand" id="t51"><div class="meta"><span class="name">白井とおる</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=3936s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:05:36</a>私もバブル経験しておりませんので、非常に鋭い質問だなと思います。非常に答えにくいなと思ったんですけども、やっぱり若い人の中でもみんなが、私がさっき申し上げたようなことにみんなが反応するわけではないと思うんですね。ですので、当然、市民参加っていう文脈で考えても、やっぱり投げかけても反応する方っていうのは限られるわけで、ただ、投げかけない限りは反応してこないんですよね。ですので、みんなが同じような行動をとるとは全く思ってません。ただし、今までさっき申し上げましたように、若い人たちに対する働きかけって、これまでおそらくあまりなかった。ただ、やってみると本当に反応があったっていうのが私の印象です。ですので、関わり方や仕掛けや、あなたたちが必要なんだよ、助けてよ、声聞かせてよってやることによって、そこに反応する若い人たちは私は一定程度いらっしゃると思います。そこにニーズっていうか、マッチする方もいれば、そういうのはごめんだよっていう若い方も当然いらっしゃると思うんですね。さっき私、チャレンジする街っていう話もしたと思うんですけども、やっぱりおっしゃったように、いろんな体験をするっていう機会ってすごい大事だと思っていて、創業支援の文脈でチャレンジをする街って言いましたけども、創業支援関係なく、子どもも若者も、なんか小さい頃から新しいことをチャレンジする、応援する、そういう機運をこの街の中に埋め込んでおけば、</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4028s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:07:08</a>そういうことを一歩踏み出すっていうことがスッとできるようになる子どもたち、若い人たちが増えるんじゃないかと思うんですね。私はそういう街のイメージをやっぱり持ってますので、そういう中から自主的に取り組む子だったりだとか、そういう子どもたち、若者を育てていくっていうのが、もしかしたら育っていくかもしれませんが、小金井発のそういう勇気のある主体的な若者、これを育てることにつながるっていうのは、小金井市のブランドにつながるかなと思います。以上です。</p>
+</div>
+<div class="turn mod" id="t52"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4058s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:07:38</a>お答えいただきましてありがとうございます。田中さん、何かありますか。はい、じゃあ田中さんお願いします。</p>
+</div>
+<div class="turn cand" id="t53"><div class="meta"><span class="name">田中真一</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4065s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:07:45</a>すいません。先ほどスタートアップの話をしたんですけども、この前お話を聞いたときにですね、やっぱりこの、5年後経ったので場所がないということと、やっぱり彼らが悩んでるのはお金の件だったんですよ。やっぱり資金的な調達がなかなか難しいということの中で、実は地方創生というのを国が進めている中でですね、産・官・学・金・労・言といいまして、金はお金なんですね。労は労働組合、そして言は実はマスコミの皆様方。こういったところが一体となることによって、新しく産業を育てることになるんですね。そういった意味で、地元の信用金庫である多摩信さんとかですね、そういうところがやっぱりサポートして、地元企業を育成していただくようなことに対して、橋渡しをしたりとか、この地域の中で新しい産業を育てることをですね、金融機関の人たちと一緒になって進めていくことは極めて重要なことだなと私は思っております。以上です。</p>
+</div>
+<h2 class="topic" id="topic9"><span class="no">9</span>最後の主張</h2>
+<div class="turn mod" id="t54"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4117s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:08:37</a>はい、ありがとうございます。他に何かありますか。最後にですね、これで討論は終わるんですけれども、一人一人からメッセージをいただきたいというふうに思います。いいですかね。メッセージあったほうがいいですもんね。はい、そうですよね。それではですね、先ほどあったので、後藤さんから最後のクロージングメッセージという形でお願いいたします。</p>
+</div>
+<div class="turn cand" id="t55"><div class="meta"><span class="name">後藤秀典</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4141s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:09:01</a>はい。皆さん、どうも長い時間ありがとうございます。今回、私、挑戦するに当たって、4つの政策というか重大課題を出してまして、まず、物価高から暮らしを守ると、生活に困らない寄り添うサポート。公立保育園は様々な方策を検討し、維持・復活。自然を破壊する都道の3・4・11建設計画は中止をと。新市役所、新庁舎建設は財政状況を公開し、コンパクトに利用しやすい庁舎をと。この4つの公約を掲げています。この、実は後半のうちの3つは、白井さんが4年前に掲げた政策と同じなんですね。私、この政策を実行していくためには、当然、私がもし市政を担うことになっても、私一人では到底実行できないというふうに思ってます。今回、私は、完全無所属で立候補してます。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4204s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:10:04</a>ただ、ごめんなさい、立候補の予定でおりますと。すいませんね、選挙法難しいですね。市長選に挑戦をしようとしています。それに当たっては、党派を超えて、今のところ7人、これが多分8人、9人と増えていくと思うんですけれども、党派を超えた市議会の皆さんに応援をいただいてます。私は、この今少なくとも応援していただいている7人の市議会議員の皆さんと一緒に、実行可能な、責任持って実行できる政策、これを一緒に考えていく。私、政治経験ないですから、市長室に私一人いても、政策を作ることはできません。だから、この7人の市議会議員と一緒に、実行可能な政策をちゃんと立てて、それを市政の場に生かしていくと。あともう一人、漢人(かんど)あきこさんの協力いただいてるんで、東京都との交渉やなんかは、そこを通じてやっていくと。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4271s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:11:11</a>ただ最大、やっぱり私、重要なのは、市民の皆さんの理解とご協力だと思ってます。多分、少数与党になるでしょう。それから、市の経験豊かな職員の人たち、こういう人たち。つまり野党議員の皆さんと、それから市の職員たちと対話し、それから交渉して、今までと違う市政をやっていかなければいけない。政策を進めていかなければいけない。これを行うの、ものすごく大変だと思うんですね。ただ、これを行う最大の担保、それは圧倒的な市民のご理解とご協力だと思うんです。私は、だからそれをなしに、市政を担っていくことはできません。だから最後にお願いしたいんですけれども、選挙の後、もし私が市政を担うことになったら、祭りの後の静けさだけにはしないでください。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4338s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:12:18</a>つまり、お祭りが終わった後、みんなさーっと引いてしまうと。私はそうすると、一人で市長室に取り残されて、UFOのように飛んでいっちゃうことになってしまう。だから私は、一人でも多くの市民の皆さんと対話をして、一人一人の市民の皆さんにブレーンになってもらいたいんです。そして、市民の皆さんの圧倒的な理解とご協力のもとに、私はこの政策、これを実行していきたいと思います。安心してずっと暮らせる小金井、これをぜひ一緒に実現させていきたいなというふうに思います。ありがとうございました。</p>
+</div>
+<div class="turn mod" id="t56"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4377s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:12:57</a>はい、ありがとうございます。では白井さん、お願いいたします。</p>
+</div>
+<div class="turn cand" id="t57"><div class="meta"><span class="name">白井とおる</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4382s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:13:02</a>はい。4年前ですね、前市長の辞職によって突然の市長選挙となりました。私は当時、市議会議員3期途中まで務めていた立場でした。長きにわたって、市政の最前線で、時には行政に対して厳しく指摘をする、こういう仕事をしていた、深く関わってきたその責任から、自ら手を挙げたわけです。この4年間ですね、市政の課題解決、未来の小金井づくり、そしてみんなで新しい小金井を作ろうと取り組んできたわけでありますが、正直、うまくいったこともあれば、いかなかったこともたくさんありました。これまで市長という立場で、そして小金井市の今後の行く末を考えた時に、その時の状況に応じながら、一つ一つ、何をどのように判断していくのか、それが小金井市にとって最善なのか、とことん悩みながら、答えを作ってきた、そんな4年間でございました。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4451s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:14:11</a>庁舎建設につきましては、先ほど来触れておりますが、中東情勢を含めて建設費の高騰、この影響もあって、設計のやり直しということにはなりましたが、専決処分で混乱した公立保育園の問題については、紆余曲折をして、新しい方針、そして条例によって、私としては答えを作ったところです。都市計画道路につきましては、公約とは異なる結論となりましたが、私としても結論として出したところです。至らないところはたくさんあります。私自身も自覚はしております。しかしながらですね、議会の皆様をはじめとして、市民の皆様のおかげで、この4年間を通じて、市政は前へと進んできたと認識をしております。市長となって4年間、改めて小金井市の市民の皆さんの市民力の高さ、これに本当に驚いております。いい意味で。また、今この小金井市という街が、市長となって改めて実感したことではありますけれども、小金井市という街が安全・安心で、なおかつ魅力的な街で機能している背景にはですね、地域の多くの皆さんが、それぞれの役割を担っていただいている、この多様な市民の皆さんが動いている、これによって街が成り立っているということを実感をしているところでございます。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4536s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:15:36</a>これからの時代は、今まで以上に私は厳しくなると考えております。そのより厳しくなる時代に向けて、事業も、もしかしたら取捨選択しなければならない、このように考えております。あれもこれもできません。しかし一方で、一人一人が豊かな人生を送ることができる、過ごすことができる街づくりに当たって、市民の皆さんの力、そして様々な企業や団体、こういう力を結集して、それこそオンリーワンな魅力のある街として発展させることができると私は考えています。小金井市は19年前に偶然移り住んだ街でした。縁ができたことによって、街を知り、そしていつの間にか興味を持って、自分ができることをと思いながら市議会議員になり、そしてその後市長にならせていただきました。縁ができたこの小金井市を、魅力いっぱいの街を、持続可能でありながら、もっともっとより良い街にしていきたいと。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4599s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:16:39</a>自分がそれでできることで役に立ちたい。そんな思いで、これまで市議8年、市長4年、12年間やってまいりました。それは思いとしては、この4年間もそうですし、今も変わりはありません。これまでも挑戦してまいりました。現職ですが、難しい問題に向け、これからの新しい小金井市を作るため、挑戦し続けるつもりです。ありがとうございました。</p>
+</div>
+<div class="turn mod" id="t58"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4624s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:17:04</a>ありがとうございます。最後に田中さん、お願いいたします。</p>
+</div>
+<div class="turn cand" id="t59"><div class="meta"><span class="name">田中真一</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4627s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:17:07</a>はい。本日は小金井青年会議所の皆様方、また今日ご来会の皆様方、本当にお休みの日の夕刻にお集まりいただきまして、ありがとうございました。このような機会をいただきましたことを、まずもって感謝を申し上げます。私、実は最初の質問、ちょっと時間配分を間違えましてですね、自分のことをずらずらと言ってしまったので、ちょっと補足も含めてお話をさせていただきたいと思いますが、実は私、先ほど以来、財源が非常に少ないと言われている中で、私がちょっと注目しているところがありまして、それはふるさと納税です。ふるさと納税って皆様方もされていると思いますが、この小金井市に入ってくるふるさと納税は、986万円なんですよ。で、実は出ていくのは9億9千万です。1千万入ってきて、9億9千万出ていっている。その中で財源がない、財源がないという議論になっている。私はここは絶対是正しなきゃいけないことだと思っています。というか、ふるさと納税制度を否定するものじゃなくて、もっと小金井の街が選ばれるようなメニューをみんなで考えていく。これは多分、役所の職員だけじゃなく、これは市民の皆様方の影響をいただきながら、しっかりと税収が増える。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4691s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:18:11</a>税収が増える一つのふるさと納税というのを、選ばれる街にしていくことも、私は大事なことだと思っております。これはぜひ進めてまいりたいことだと思っています。私は政治というのは、やっぱり大事なことは、そこに住まう方たちの生命と財産と、そして人権を守ることだと思っております。そういった意味で、やはり阪神大震災の経験もございます。皆様方の命を守る、財産を守る、人権を守るために、政治というのは仕事をしなければいけない。それが私は責任だと思っています。特にリーダーは、本当にそこに対して身を粉にして働かなければならないものだと思っております。ですので、防災力を強化して、皆様方が本当に安心でこの小金井の街に暮らすことのできる街づくりを推進してまいりたいと思っています。同時に、政治というのは結果責任だと思っております。皆様方にお約束をしたこと、選挙の前でお約束をしたことを、しっかりと任期の間で形にする、結果を出す。結果が出ないまでも方向性だけはしっかり示す。</p>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4753s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:19:13</a>それが、私は政治の責任だと思っています。政治は、私は市民のものだと思います。私たち政治を行う者のものでなく、皆様方のものです。私たちはワンチームで、この街を前に進めていきたい。市民の皆様方、そして市民の皆様方に選ばれた市議会議員の先生方、そして市役所の職員の皆さん、そして市長が一体となって、この街を前に進めていくことが極めて重要なことだと思っています。選挙で当選しても、実はそこでは終わりではありません。実は議会の皆様方との合意をしっかり図っていくこと、丁寧に図っていくことです。残念ながら決算も否決をされました。23人いるうち2人だけ賛成で、21人が反対した。それがここ数年続いている。正直、私はありえないことだと思います。予算が通って決算が否決される議会が正常化していると、私は正直思いません。そういった意味で、しっかりとその責任を取って前に進める政治をするためには、丁寧に合意形成です。意見をしっかり聞く。そしてそれに対して自分の意見を述べる。そして決める。そして動かす。前に進める。そしてご理解をいただけるように最後まで丁寧に説明していくことが大事だと思ってます。市長に選ばれたらもう終わりではありません。その後、しっかりと議会の人たちと連携を取っていくための合意形成を進めないと、この小金井の街は前に進まないと私は思っております。以上でございます。ありがとうございました。</p>
+</div>
+<div class="turn mod" id="t60"><div class="meta"><span class="name">コーディネーター</span></div>
+<p class="say"><a class="ts" href="https://www.youtube.com/watch?v=sknkQ7irnDA&t=4840s" target="_blank" rel="noopener" title="YouTubeでこの場面を見る"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,4 20,12 7,20"/></svg>1:20:40</a>はい、ありがとうございました。以上をもちまして、本日の公開討論会は全て終了いたします。</p>
+</div>
+
+  <div class="foot">発言 61 件・約 31,121 字。作成 2026-11-09。話者は、話者の自動分離の結果に、会場での紹介と発言内容から名前を当てたものです。</div>
+</main>
+<button class="totop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="ページの先頭へ">↑</button>
+</body>
+</html>
