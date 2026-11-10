@@ -180,13 +180,24 @@
 .touron-txt em{display:inline-block;margin-top:12px;font-style:normal;font-family:var(--font-round);font-weight:900;background:var(--yellow);color:var(--ink);padding:9px 20px;border-radius:999px;font-size:.95rem}
 .touron-note{margin:8px 2px 0;font-size:.8rem;color:var(--ink-soft);line-height:1.6}
 .touron-note a{color:var(--blue-deep);font-weight:700}
+.touron-sub{margin:0 2px 8px;font-family:var(--font-round);font-weight:800;font-size:.88rem;color:var(--ink-soft)}
+.touron-sub+.touron-card{margin-top:0}
+.touron-note+.touron-sub{margin-top:22px}
+.touron-badge{display:flex;flex-direction:column;align-items:center;justify-content:center;aspect-ratio:16/9;border-radius:10px;background:#16181d;color:#fff;text-align:center;gap:6px}
+.touron-badge b{font-family:var(--font-en);font-weight:800;font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:.02em}
+.touron-badge small{font-family:var(--font-round);font-weight:800;font-size:.95rem;letter-spacing:.08em;opacity:.9}
 @media (max-width:760px){.touron{padding:20px 0 4px}.touron-card{grid-template-columns:1fr;padding:10px}.touron-txt{padding:0 4px 6px}}
 </style>
 <section class="touron" id="touronkai" aria-labelledby="touron-title"><div class="wrap">
-<div class="touron-head"><h2 id="touron-title">公開討論会</h2><p>2026年11月3日 主催 小金井青年会議所</p></div>
+<div class="touron-head"><h2 id="touron-title">公開討論会</h2></div>
+<p class="touron-sub">2026年11月3日 主催 小金井青年会議所</p>
 <a class="touron-card" href="https://shiraisupporters.tokyo/jckokaitoronkai/"><img src="uploads/touronkai_jc_thumb.webp" alt="小金井市長選挙 立候補予定者による公開討論会 アーカイブ映像(開催 2026年11月3日、主催 小金井青年会議所)" width="1441" height="814" loading="lazy" decoding="async">
 <span class="touron-txt"><strong>小金井市長選挙 <wbr>立候補予定者による<wbr>公開討論会の<wbr>文字起こし</strong><span>後藤秀典・白井とおる・田中真一の3人の発言を、論点ごとの比較と全文で読めます。各段落から動画のその場面を再生できます。</span><em>文字起こしを読む</em></span></a>
 <p class="touron-note">動画は<a href="https://www.youtube.com/watch?v=sknkQ7irnDA" target="_blank" rel="noopener">小金井青年会議所のYouTube</a>でご覧いただけます</p>
+<p class="touron-sub">2026年11月5日 配信 ReHacQ（司会 西田亮介）</p>
+<a class="touron-card" href="https://shiraisupporters.tokyo/rehacqtoronkai/"><span class="touron-badge" aria-hidden="true"><b>ReHacQ</b><small>ネット討論会</small></span>
+<span class="touron-txt"><strong>東京都小金井市長選挙 <wbr>立候補予定者<wbr>ネット討論会 <wbr>白井とおるの発言の要約</strong><span>論点ごとに、白井とおるの発言を要約しました。後藤秀典さん・田中真一さんの発言は、各欄の時刻リンクから動画でご覧ください。</span><em>要約を読む</em></span></a>
+<p class="touron-note">動画は<a href="https://www.youtube.com/live/_VxiMyiu7qc" target="_blank" rel="noopener">ReHacQのYouTube</a>でご覧いただけます</p>
 </div></section>
 <!-- TOURON-END -->
 <!-- GAITO-START zip外の手動追加。駅前の街頭活動予定。戻し方は 街宣予定_2026-11-08/build_gaito.py --revert -->
